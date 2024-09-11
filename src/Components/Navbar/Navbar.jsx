@@ -26,11 +26,11 @@ export const Navbar = () => {
         >
           <li className="nav__list-item">
             <a
-              href="#home"
+              href="#top"
               onClick={() => toggleNavList("#home")}
               className="link link--nav"
             >
-              Home
+              Início
             </a>
           </li>
           <li className="nav__list-item">
@@ -39,7 +39,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#about")}
               className="link link--nav"
             >
-              About
+              Sobre
             </a>
           </li>
           <li className="nav__list-item">
@@ -57,7 +57,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#projects")}
               className="link link--nav"
             >
-              Projects
+              Projetos
             </a>
           </li>
           <li className="nav__list-item">
@@ -66,7 +66,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#contact")}
               className="link link--nav"
             >
-              Contact
+              Contato
             </a>
           </li>
           <li className="nav__list-item">
@@ -77,7 +77,7 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Resume
+              Currículo
             </a>
           </li>
         </ul>
