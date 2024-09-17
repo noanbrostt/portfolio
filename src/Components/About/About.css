@@ -1,22 +1,21 @@
 .about {
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 5em;
+    width: 60%;
+    background-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .about__name {
     color: var(--clr-primary);
 }
 .about > :nth-child(2) {
-    margin-top: 1.2em;
+    margin-top: 0.4em;
     font-size: 2rem;
     line-height: 1.2;
     color: var(--clr-fg-alt);
+    z-index: 1;
+    align-self: baseline;
 }
-.about__desc {
-    font-size: 1rem;
-    max-width: 70%;
-    text-align: center;
-}
-.about__desc,
 .about__contact {
     margin-top: 2.4em;
 }
@@ -30,10 +29,11 @@
     color: var(--clr-primary);
     border: 2px solid var(--clr-primary);
     border-radius: 5px;
-    height: 50px;
+    height: 35px;
     cursor: pointer;
     padding: 0px 30px;
-    margin-top: 10px;
+    margin-top: -12px;
+    z-index: 1;
 }
 .btnResume:hover {
     background-color: var(--clr-primary);

@@ -19,7 +19,6 @@ export const About = () => {
                     </div>
                     <div className="introduction_datacontainer">
                         <h4>
-                            {/* Possuo forte habilidade em lógica de programação e lógica matemática, além de uma excelente capacidade de interpretar as necessidades dos clientes. Minha principal competência está no front-end, onde me destaco por criar interfaces bonitas, intuitivas e funcionais, sem comprometer a eficiência e a qualidade do back-end. */}
                             Meu nome é{" "}
                             <span className="different">Noan Caliel Brostt </span>{" "}
                             e eu sou de{" "}

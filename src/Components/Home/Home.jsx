@@ -1,30 +1,25 @@
 import React from "react";
 import "./Home.css";
 import { Type } from "./Type";
+import bkgPic from "../../assets/home_bkg.jpg";
+
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
-import TwitterIcon from "@material-ui/icons/Twitter";
 import DescriptionIcon from "@material-ui/icons/Description";
-// import PublicIcon from "@material-ui/icons/Public";
-// import { Introduction } from "./Introduction";
-// import { Timeline } from "./Timeline";
-// import { Techstacks } from "./Techstacks";
-// import Button from "@mui/material/Button";
 
 export const Home = () => {
     return (
         <>
+            <img src={bkgPic} alt="Home Background" id="homeBkg" />
+
             <div className="about center">
                 <h1 data-aos="fade-right" className="mobileHead">
-                    Olá, eu sou <span className="about__name">Noan Brostt</span>
+                    Olá! Eu sou <span className="about__name">Noan Brostt</span>, Dev Full Stack e artista do Front End.
                 </h1>
-                <Type />
-                <p className="about__desc" data-aos="fade-right">
-                    Sou um desenvolvedor com paixão pelo front-end, sempre
-                    buscando novas oportunidades para aplicar minhas habilidades
-                    e continuar crescendo como profissional.
+                <p data-aos="fade-right">
+                    <Type />
                 </p>
                 <div className="about__contact center">
                     <a
@@ -64,26 +59,16 @@ export const Home = () => {
                         <LinkedInIcon />
                     </a>
                     <a
-                        href="https://twitter.com/KhakalShreyas"
-                        aria-label="twitter"
+                        href="https://www.linkedin.com/in/shreyas-g-khakal/"
+                        aria-label="curriculum"
                         className="link link--icon"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <TwitterIcon />
+                        <DescriptionIcon />
                     </a>
                 </div>
 
-                <button
-                    className="btnResume"
-                    onClick={() => {
-                        window.open(
-                            "https://drive.google.com/file/d/1O7O6dgBNriadNFoYRj8kHr6-dyPyoG4n/view?usp=sharing"
-                        );
-                    }}
-                >
-                    Resume
-                </button>
             </div>
         </>
     );
