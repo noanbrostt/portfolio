@@ -1,13 +1,9 @@
-.dark .header.compact,
-.light .header.compact {
-  background-color: var(--clr-bg) !important;
-}
 .header {
   height: 5em;
   width: 100%;
   margin: 0 auto;
   padding-top: 3em;
-  padding-inline: 15%;
+  padding-inline: 10%;
   justify-content: space-between;
   transition: all 300ms;
   background-color: transparent;
@@ -17,10 +13,14 @@
 .header.compact {
   height: 5em;
   padding-top: 0em;
-  background-color: inherit;
+  background-color: var(--clr-bg);
+}
+.header h3 {
+  background-color: transparent;
 }
 @media (max-width: 600px) {
   .header {
     height: 6em;
+    padding-inline: 5%;
   }
 }

@@ -70,8 +70,15 @@ section {
 .link:focus::before {
     width: 100%;
 }
-.link--nav {
+.compact .link--nav {
     color: var(--clr-fg);
+    text-shadow: 2px 2px 4px var(--clr-bg);
+}
+.compact h3 {
+    text-shadow: 2px 2px 4px var(--clr-bg);
+}
+.link--nav {
+    color: #bdbddd;
     font-weight: 500;
 }
 .link--icon {
