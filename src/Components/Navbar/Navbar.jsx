@@ -96,7 +96,7 @@ export const Navbar = () => {
           className="btn btn--icon nav__hamburger"
           aria-label="toggle navigation"
         >
-          {showNavList ? <CloseIcon /> : <MenuIcon />}
+          {showNavList ? <CloseIcon /> : <MenuIcon style={{ fontSize: "1.8em" }} />}
         </button>
       </nav>
     </>

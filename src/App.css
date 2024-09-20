@@ -70,10 +70,6 @@ section {
 .link:focus::before {
     width: 100%;
 }
-.compact .link--nav {
-    color: var(--clr-fg);
-    text-shadow: 2px 2px 4px var(--clr-bg);
-}
 .compact h3 {
     text-shadow: 2px 2px 4px var(--clr-bg);
 }
@@ -129,11 +125,13 @@ section {
 }
 .btn--icon {
     padding: 0;
-}
-.btn--icon:hover,
-.btn--icon:focus {
     color: var(--clr-primary);
+    transition: 3;
 }
+/* .btn--icon:hover,
+.btn--icon:focus {
+    color: var(--clr-bg-alt);
+} */
 .btn--icon:active {
     transform: translateY(-5px);
 }

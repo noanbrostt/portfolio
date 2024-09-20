@@ -20,16 +20,35 @@ export const About = () => {
                     <div className="introduction_datacontainer">
                         <h4>
                             Meu nome é{" "}
-                            <span className="different">Noan Caliel Brostt </span>{" "}
-                            e eu sou de{" "}
+                            <span className="different">Noan Caliel Brostt</span>{" "}
+                            e moro em{" "}
                             <span className="different">Curitiba, Paraná (Brasil)</span>
-                            . Tenho 3 anos de experiência atuando em diversas áreas da programação, desde{" "}
-                            <span className="different">automação </span>
-                            até a construção de{" "}
-                            <span className="different">bancos de dados </span>
-                            e{" "}
-                            <span className="different">desenvolvimento de sites completos</span>
-                            . Minha principal competência está no front-end, onde me destaco por criar interfaces bonitas, intuitivas e funcionais, sem comprometer a eficiência e a qualidade do back-end.
+                            . Conheci a programação na faculdade de engenharia, e após conseguir meu primeiro emprego como programador precisei desempenhar em diversas áreas diferentes, mas foi no{" "}
+                            <span className="different">desenvolvimento web</span>
+                            , principalmente no{" "}
+                            <span className="different">front end</span>
+                            , que descobri minha vocação. Hoje sou{" "}
+                            <span className="different">Desenvolvedor PHP Full Stack</span>
+                            , sai da engenharia e{" "}
+                            <span className="different">me formei em ADS</span>{" "}
+                            e logo vou finalizar minha{" "}
+                            <span className="different">pós-graduação em Front End</span>
+                            .
+                            {/* Na faculdade de engenharia foi onde descobri minha{" "}
+                            <span className="different">facilidade com lógica de programação</span>
+                            .
+                            No meu primeiro emprego eu fui o único desenvolvedor de um sistema, e desenvolvi uma{" "}
+                            <span className="different">boa noção de design</span>
+                            , depois que{" "}
+                            <span className="different">me formei em ADS</span>{" "}
+                            eu avancei na carreira e comecei a falar com clientes todo dia, aperfeiçoando minha{" "}
+                            <span className="different">capacidade de traduzir os desejos do cliente em código</span>
+                            . Atualmente,{" "}
+                            <span className="different">estou cursando pós-graduação em front-end</span>{" "}
+                            para expandir ainda mais minhas habilidades.
+                            <br/>
+
+                            Quando não estou programando eu gosto de jogar vôlei, um esporte que pratico há 8 anos. Estou sempre buscando novos desafios, tanto no esporte quanto na minha carreira, com o objetivo de crescer e contribuir com cada projeto que participo. */}
                         </h4>
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 .nav {
   background-color: transparent;
 }
+.compact .link--nav {
+  color: var(--clr-fg);
+  text-shadow: 2px 2px 4px var(--clr-bg);
+}
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -17,6 +21,8 @@
 
 @media (max-width: 600px) {
   .nav__list {
+    background-color: var(--clr-bg);
+    text-shadow: none;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -27,11 +33,12 @@
     height: 100%;
     z-index: 2;
   }
-
+  .link--nav {
+    color: var(--clr-fg);
+  }
   .nav__list-item {
     margin: 0.5em 0;
   }
-
   .app .nav__hamburger {
     display: flex;
     z-index: 2;
