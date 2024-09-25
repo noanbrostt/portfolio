@@ -16,7 +16,7 @@ export const Home = () => {
 
             <div className="about center">
                 <h1 data-aos="fade-right" className="mobileHead">
-                    Olá! Eu sou <span className="about__name">Noan Brostt</span>, Full Stack PHP e artista do Front End.
+                    Olá! Eu sou <span className="about__name">Noan Brostt</span>, Full Stack PHP e artista do Front-End.
                 </h1>
                 <p data-aos="fade-right">
                     <Type />

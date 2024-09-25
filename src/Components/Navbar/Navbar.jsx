@@ -81,15 +81,14 @@ export const Navbar = () => {
             </a>
           </li>
         </ul>
-        <button
-          type="button"
-          onClick={toggeltheme}
-          className="btn btn--icon nav__theme"
-          aria-label="toggle theme"
-          style={{ backgroundColor: "inherit" }}
-        >
-          {themename === "dark" ? <WbSunnyRoundedIcon className="icon-shadow" /> : <Brightness2Icon className="icon-shadow" />}
-        </button>
+        
+        {/* From Uiverse.io by juanpabl0svn */}
+        <label htmlFor="switch" className="switch">
+          <input id="switch" type="checkbox" onClick={toggeltheme} />
+          <span className="slider"></span>
+          <span className="decoration"></span>
+        </label>
+
         <button
           type="button"
           onClick={toggleNavList}

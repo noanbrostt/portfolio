@@ -8,10 +8,9 @@ export const Type = () => {
             <Typewriter
                 options={{
                     strings: [
-                        "Desenvolvedor Web Full Stack",
-                        "Especialista em Front End",
+                        "Desenvolvedor Full Stack",
+                        "Especialista em Front-End",
                         "Atleta Amador de Vôlei",
-                        "Pianista",
                     ],
                     autoStart: true,
                     loop: true,
