@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { ThemeContext } from "../../Context/theme";
 import "./Navbar.css";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
+
+  const { t, i18n: {changeLanguage, language} } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(language);
+
+  const handleChangeLanguage = () => {
+    const newLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
+    changeLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
+  }
 
   const toggleNavList = (id) => {
     var element = document.getElementById(id);
@@ -17,6 +25,8 @@ export const Navbar = () => {
     }
     setShowNavList(!showNavList);
   };
+
+
   return (
     <>
       <nav className="center nav">
@@ -30,7 +40,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#home")}
               className="link link--nav"
             >
-              Início
+              {t('home')}
             </a>
           </li>
           <li className="nav__list-item">
@@ -39,7 +49,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#about")}
               className="link link--nav"
             >
-              Sobre
+              {t('about')}
             </a>
           </li>
           <li className="nav__list-item">
@@ -57,7 +67,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#projects")}
               className="link link--nav"
             >
-              Projetos
+              {t('projects')}
             </a>
           </li>
           <li className="nav__list-item">
@@ -66,7 +76,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#contact")}
               className="link link--nav"
             >
-              Contato
+              {t('contact')}
             </a>
           </li>
           <li className="nav__list-item">
@@ -77,17 +87,19 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Currículo
+              {t('resume')}
             </a>
           </li>
         </ul>
-        
+
+        <button type="button" onClick={handleChangeLanguage}>O</button>
+
         {/* From Uiverse.io by juanpabl0svn */}
         <label htmlFor="switch" className="switch">
           <input id="switch" type="checkbox" onClick={toggeltheme} />
           <span className="slider"></span>
           <span className="decoration"></span>
-        </label>
+        </label>  
 
         <button
           type="button"
