@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Home.css";
 import { Type } from "./Type";
 import bkgPic from "../../assets/home_bkg.jpg";
+import { Trans } from "react-i18next";
 
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
-import PhoneIcon from "@material-ui/icons/Phone";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import DescriptionIcon from "@material-ui/icons/Description";
-import { Trans } from "react-i18next";
 
 
 export const Home = () => {
@@ -32,7 +32,7 @@ export const Home = () => {
                 </p>
                 <div className="about__contact center">
                     <a
-                        href="https://github.com/Shreyasgkhakal100"
+                        href="https://github.com/noanbrostt"
                         aria-label="github"
                         target="_blank"
                         rel="noreferrer"
@@ -41,7 +41,7 @@ export const Home = () => {
                         <GitHubIcon />
                     </a>
                     <a
-                        href="mailto:shreyasgkhakal100@gmail.com"
+                        href="mailto:calielnoan@gmail.com"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="mail"
@@ -50,16 +50,16 @@ export const Home = () => {
                         <EmailIcon />
                     </a>
                     <a
-                        href="tel:+918668613593"
+                        href="https://wa.me//5541999946316"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="phone"
                         className="link link--icon"
                     >
-                        <PhoneIcon />
+                        <WhatsAppIcon />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/shreyas-g-khakal/"
+                        href="https://www.linkedin.com/in/noan-caliel-brostt-74ab66187/"
                         aria-label="linkedin"
                         className="link link--icon"
                         target="_blank"

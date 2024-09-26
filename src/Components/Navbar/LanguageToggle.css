@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-right: 0.8em;
   color: #fcfcfc;
   user-select: none;
 }
@@ -16,7 +15,6 @@
 }
 .radio-buttons label {
   display: flex;
-  cursor: pointer;
   transition: opacity 0.3s;
 }
 .separator {
@@ -24,7 +22,7 @@
 }
 .airplane {
   position: absolute;
-  top: -20px;
+  top: -18px;
   left: -20px;
   opacity: 0;
 }
@@ -44,7 +42,7 @@
   }
   100% {
     transform: translate(90px, -5px)  rotate(45deg);
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 @keyframes flyToPt {
@@ -54,12 +52,13 @@
   }
   100% {
     transform: translate(0px, -5px) scaleY(-1) rotate(-135deg);
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 .inactive {
   opacity: 0.5; /* Opacidade reduzida para o idioma não selecionado */
   filter: grayscale(1);
+  cursor: pointer;
 }
 .flags {
   width: 26px;

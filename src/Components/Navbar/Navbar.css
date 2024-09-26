@@ -13,34 +13,8 @@
   margin-left: 1.5em;
 }
 .app .nav__hamburger {
+  font-size: 2em;
   display: none;
-}
-
-@media (max-width: 600px) {
-  .nav__list {
-    background-color: var(--clr-bg);
-    text-shadow: none;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-  .link--nav {
-    color: var(--clr-fg);
-  }
-  .nav__list-item {
-    margin: 0.5em 0;
-  }
-  .app .nav__hamburger {
-    display: flex;
-    z-index: 2;
-    margin-left: 0.8em;
-  }
 }
 /* From Uiverse.io by juanpabl0svn */ 
 /* The switch - the box around the slider */
@@ -51,7 +25,7 @@
   width: 4em;
   height: 2em;
   cursor: pointer;
-  scale: .85;
+  scale: .65;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -111,4 +85,29 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(130%);
   box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
+}
+@media (max-width: 855px) {
+  .nav__list {
+    background-color: var(--clr-bg);
+    text-shadow: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .link--nav {
+    color: var(--clr-fg);
+  }
+  .nav__list-item {
+    margin: 0.5em 0;
+  }
+  .app .nav__hamburger {
+    display: flex;
+    z-index: 2;
+  }
 }
