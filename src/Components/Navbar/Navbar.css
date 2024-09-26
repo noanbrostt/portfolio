@@ -48,9 +48,10 @@
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 3.5em;
+  width: 4em;
   height: 2em;
   cursor: pointer;
+  scale: .85;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -108,6 +109,6 @@ input:checked + .slider {
   background-color: #5494de;
 }
 input:checked + .slider:before {
-  transform: translateX(100%);
+  transform: translateX(130%);
   box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
 }

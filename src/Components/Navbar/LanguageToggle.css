@@ -1,0 +1,66 @@
+.language-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0.8em;
+  color: #fcfcfc;
+  user-select: none;
+}
+.compact .language-toggle {
+  color: var(--clr-fg);
+  text-shadow: none;
+}
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+.radio-buttons label {
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.separator {
+  margin: 0 5px;
+}
+.airplane {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  opacity: 0;
+}
+.airplane.fly {
+  opacity: 1;
+}
+.airplane.fly.ptToEn {
+  animation: flyToEn .7s;
+}
+.airplane.fly.enToPt {
+  animation: flyToPt .7s;
+}
+@keyframes flyToEn {
+  0% {
+    transform: translate(0, -5px)  rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(90px, -5px)  rotate(45deg);
+    opacity: 0;
+  }
+}
+@keyframes flyToPt {
+  0% {
+    transform: translate(90px, -5px) scaleY(-1) rotate(-135deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -5px) scaleY(-1) rotate(-135deg);
+    opacity: 0;
+  }
+}
+.inactive {
+  opacity: 0.5; /* Opacidade reduzida para o idioma não selecionado */
+  filter: grayscale(1);
+}
+.flags {
+  width: 26px;
+}

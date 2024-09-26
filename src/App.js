@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { ThemeContext } from "./Context/theme";
 import Aos from "aos";
 import "aos/dist/aos.css";
-// import { Techstacks } from "./Components/About/Techstacks";
+import { useTranslation } from "react-i18next";
 
 import { Header } from "./Components/Header/Header";
 import { Home } from "./Components/Home/Home";
 import { About } from "./Components/About/About";
-import { Timeline } from "./Components/Timeline/Timeline";
 import { Techstacks } from "./Components/Techstacks/Techstacks";
 import { Projects } from "./Components/Projects/Projects";
 import { Contact } from "./Components/Contact/Contact";
@@ -21,6 +20,9 @@ export default function App() {
         Aos.init({ duration: 1400 });
     }, []);
 
+    const { t, i18n: {changeLanguage, language} } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(language);  
+
     return (
         <div id="top" className={`${themename} app`}>
             <Header />
@@ -31,9 +33,6 @@ export default function App() {
                 <section id="about">
                     <About />
                 </section>
-                {/* <section id="timeline">
-                    <Timeline />
-                </section> */}
                 <section id="skills">
                     <Techstacks />
                 </section>

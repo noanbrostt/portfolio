@@ -14,12 +14,15 @@ import { DiCss3, DiMongodb } from "react-icons/di";
 import { SiJavascript, SiHeroku } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap, BsWordpress } from "react-icons/bs";
+import { Trans } from "react-i18next";
 
 export const Techstacks = () => {
   return (
     <>
       <div className="section main" data-aos="fade-right">
-        <h2 className="section__title different">Skills</h2>
+        <h2 className="section__title different">
+        <Trans i18nKey="skills.title" />
+        </h2>
         <div className="techsection">
           <div>
             <SiJavascript />

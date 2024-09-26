@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { Type } from "./Type";
 import bkgPic from "../../assets/home_bkg.jpg";
@@ -8,15 +8,24 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import DescriptionIcon from "@material-ui/icons/Description";
+import { Trans } from "react-i18next";
+
 
 export const Home = () => {
+
     return (
         <>
             <img src={bkgPic} alt="Home Background" id="homeBkg" />
 
             <div className="about center">
                 <h1 data-aos="fade-right" className="mobileHead">
-                    Olá! Eu sou <span className="about__name">Noan Brostt</span>, Full Stack PHP e artista do Front-End.
+                    <Trans
+                        i18nKey="home.greeting"
+                        values={{
+                            name: "Noan Brostt"
+                        }}
+                        components={{ 1: <span className="about__name" /> }}
+                    />
                 </h1>
                 <p data-aos="fade-right">
                     <Type />

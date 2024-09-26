@@ -3,20 +3,13 @@ import { ThemeContext } from "../../Context/theme";
 import "./Navbar.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
+
+import LanguageToggle from './LanguageToggle';
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
-
-  const { t, i18n: {changeLanguage, language} } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(language);
-
-  const handleChangeLanguage = () => {
-    const newLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
-    changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage);
-  }
 
   const toggleNavList = (id) => {
     var element = document.getElementById(id);
@@ -40,7 +33,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#home")}
               className="link link--nav"
             >
-              {t('home')}
+              <Trans i18nKey="nav.home" />
             </a>
           </li>
           <li className="nav__list-item">
@@ -49,7 +42,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#about")}
               className="link link--nav"
             >
-              {t('about')}
+              <Trans i18nKey="nav.about" />
             </a>
           </li>
           <li className="nav__list-item">
@@ -58,7 +51,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#skills")}
               className="link link--nav"
             >
-              Skills
+              <Trans i18nKey="nav.skills" />
             </a>
           </li>
           <li className="nav__list-item">
@@ -67,7 +60,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#projects")}
               className="link link--nav"
             >
-              {t('projects')}
+              <Trans i18nKey="nav.projects" />
             </a>
           </li>
           <li className="nav__list-item">
@@ -76,7 +69,7 @@ export const Navbar = () => {
               onClick={() => toggleNavList("#contact")}
               className="link link--nav"
             >
-              {t('contact')}
+              <Trans i18nKey="nav.contact" />
             </a>
           </li>
           <li className="nav__list-item">
@@ -87,12 +80,14 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {t('resume')}
+              <Trans i18nKey="nav.resume" />
             </a>
           </li>
         </ul>
 
-        <button type="button" onClick={handleChangeLanguage}>O</button>
+        <LanguageToggle />
+
+        {/* <button type="button" onClick={handleChangeLanguage}>O</button> */}
 
         {/* From Uiverse.io by juanpabl0svn */}
         <label htmlFor="switch" className="switch">
