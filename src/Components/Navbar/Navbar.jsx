@@ -87,9 +87,7 @@ export const Navbar = () => {
 
         <LanguageToggle />
 
-        {/* <button type="button" onClick={handleChangeLanguage}>O</button> */}
-
-        {/* From Uiverse.io by juanpabl0svn */}
+        {/* From Uiverse.io by juanpabl0svn, adapted by me */}
         <label htmlFor="switch" className="switch">
           <input id="switch" type="checkbox" onClick={toggeltheme} />
           <span className="slider"></span>

@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "./Components/Header/Header";
 import { Home } from "./Components/Home/Home";
 import { About } from "./Components/About/About";
-import { Techstacks } from "./Components/Techstacks/Techstacks";
+import { Skills } from "./Components/Skills/Skills";
 import { Projects } from "./Components/Projects/Projects";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
@@ -34,7 +34,7 @@ export default function App() {
                     <About />
                 </section>
                 <section id="skills">
-                    <Techstacks />
+                    <Skills />
                 </section>
                 <section id="projects">
                     <Projects />

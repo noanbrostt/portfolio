@@ -16,6 +16,8 @@
         "about.title": "SOBRE <1>MIM</1>",
         "about.text": "Olá, seja bem vindo! 🖐🏻<br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>{{degree}}</dif> e estou finalizando minha <dif>pós-graduação em Front-End</dif>.<br/><br/>Conheci a programação na faculdade de engenharia, e após conseguir meu primeiro emprego na área precisei desempenhar em diversas áreas, mas foi no <dif>desenvolvimento web</dif>, principalmente no <dif>front-end</dif>, que descobri minha vocação.<br/><br/>Hoje sou <dif>Desenvolvedor PHP Full Stack há 3 anos</dif> e trabalho de forma terceirizada para a <dif>{{company}}</dif>.",
 
-        "skills.title": "HABILIDADES"
+        "skills.title": "HABILIDADES",
+        "skills.others": "Outros",
+        "skills.english": "Inglês"
     }
 }
