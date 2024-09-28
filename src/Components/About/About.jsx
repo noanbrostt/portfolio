@@ -28,7 +28,6 @@ export const About = () => {
                                 values={{
                                     name: "Noan Caliel Brostt",
                                     city: "Curitiba",
-                                    degree: "ADS",
                                     company: "CAIXA Econômica Federal"
                                 }}
                                 components={{
