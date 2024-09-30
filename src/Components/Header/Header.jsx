@@ -6,11 +6,10 @@ import "./Header.css";
 export const Header = () => {
     const [{ themename }] = React.useContext(ThemeContext);
     const [barHeightClass, setBarHeightClass] = useState('');
-    const [isCompact, setIsCompact] = useState(false);
 
     useEffect(() => {
         const toggleHeaderHeight = () =>
-            window.pageYOffset == 0 ? setBarHeightClass('') : setBarHeightClass(' compact');
+            window.pageYOffset == 0 ? setBarHeightClass('') : setBarHeightClass('compact');
 
         window.addEventListener("scroll", toggleHeaderHeight);
         return () => window.removeEventListener("scroll", toggleHeaderHeight);
@@ -21,7 +20,7 @@ export const Header = () => {
         <>
             <header className={"header center " + themename + " " + barHeightClass}>
                 <h3>
-                    <a href="#top" className="link">
+                    <a href="#top" className="link logo">
                         Noan Brostt
                     </a>
                 </h3>

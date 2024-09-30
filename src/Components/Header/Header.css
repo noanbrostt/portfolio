@@ -18,6 +18,12 @@
 .header h3 {
   background-color: transparent;
 }
+.logo {
+  color: #33ccff;
+}
+.compact .logo {
+  color: var(--clr-primary);
+}
 @media (max-width: 600px) {
   .header {
     height: 6em;
