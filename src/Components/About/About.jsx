@@ -19,7 +19,7 @@ export const About = () => {
                 </h2>
                 <div className={"introduction " + themename}>
                     <div className="introduction_logocontainer">
-                        <img src={profilePic} alt="Images" />
+                        <img src={profilePic} alt="Profile picture" />
                     </div>
                     <div className="introduction_datacontainer">
                         <h4>
@@ -32,6 +32,7 @@ export const About = () => {
                                 }}
                                 components={{
                                     dif: <span className="different" />,
+                                    wave: <span className="wave" />,
                                     br: <br />
                                 }}
                             />

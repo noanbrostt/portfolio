@@ -45,6 +45,27 @@
     color: var(--clr-fg-alt);
     margin-right: 0.5em;
 }
+.wave {
+    display: inline-block;
+    animation: waveAnimation 2s ease-in-out infinite;
+    transform-origin: 70% 70%; /* Ajusta o ponto de rotação para dar a sensação de aceno */
+    scale: 1.2;
+    margin-left: 4px;
+}
+@keyframes waveAnimation {
+    0%, 30% {
+        transform: rotate(0deg); /* Mão parada inicialmente */
+    }
+    40%, 60% {
+        transform: rotate(15deg); /* Aceno para um lado */
+    }
+    70%, 90% {
+        transform: rotate(-15deg); /* Aceno para o outro lado */
+    }
+    100% {
+        transform: rotate(0deg); /* Volta à posição original */
+    }
+}
 @media (max-width: 1022px) {
     .introduction {
         flex-direction: column;
