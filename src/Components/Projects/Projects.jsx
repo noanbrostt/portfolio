@@ -1,43 +1,45 @@
 import React from "react";
 import "./Projects.css";
+import ProjectCard from './ProjectCard';
 import { Trans } from "react-i18next";
 import pizra from "../../assets/projects/Pizra.png";
+import plansul from "../../assets/projects/recrutamento-plansul.png";
+import tinder from "../../assets/projects/tinder.png";
 
 export const Projects = () => {
+
     return (
         <>
-            <div className="section">
+            <div className="section" data-aos="fade-right">
                 <h2 className="section__title different">
                     <Trans i18nKey="projects.title" />
                 </h2>
                 <div className="allProjects">
-                    <div className="project">
-                        <div className="imgContainer">
-                            <img src={ pizra } alt="Pizra Pizzaria" />
-                        </div>
 
-                        <div className="verticalLine"></div>
+                    <ProjectCard
+                        title={<Trans i18nKey="projects.pizra.title" />}
+                        description={<Trans i18nKey="projects.pizra.description" />}
+                        deployUrl="https://noanbrostt.github.io/Pizra/"
+                        codeUrl="https://github.com/noanbrostt/Pizra/"
+                        imageUrl={pizra}
+                    />
 
-                        <div className="projectDetails">
-                            <h3>Pizra Pizzaria</h3>
-                            <p>Site completo e responsivo para uma pizzaria ficcional.</p>
-                            <div className="actions">
-                                {/* From Uiverse.io by cssbuttons-io, adapted by me */}
-                                <a className="fancy" href="https://noanbrostt.github.io/Pizra/" target="_blank">
-                                    <span className="top-key"></span>
-                                    <span className="text">Acessar Site</span>
-                                    <span className="bottom-key-1"></span>
-                                    <span className="bottom-key-2"></span>
-                                </a>
-                                <a className="fancy" href="https://github.com/noanbrostt/Pizra" target="_blank">
-                                    <span className="top-key"></span>
-                                    <span className="text">Ver Código</span>
-                                    <span className="bottom-key-1"></span>
-                                    <span className="bottom-key-2"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <ProjectCard
+                        title={<Trans i18nKey="projects.plansul.title" />}
+                        description={<Trans i18nKey="projects.plansul.description" />}
+                        deployUrl="https://noanbrostt.github.io/recruiting-landing-page/"
+                        codeUrl="https://github.com/noanbrostt/recruiting-landing-page/"
+                        imageUrl={plansul}
+                    />
+
+                    <ProjectCard
+                        title={<Trans i18nKey="projects.tinder.title" />}
+                        description={<Trans i18nKey="projects.tinder.description" />}
+                        deployUrl="https://noanbrostt.github.io/tinder/"
+                        codeUrl="https://github.com/noanbrostt/tinder/"
+                        imageUrl={tinder}
+                    />
+
                 </div>
             </div>
         </>

@@ -12,7 +12,6 @@ import { Skills } from "./Components/Skills/Skills";
 import { Projects } from "./Components/Projects/Projects";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
-import { ScrollToTop } from "./Components/ScrollToTop/ScrollToTop";
 
 export default function App() {
     const [{ themename }] = React.useContext(ThemeContext);
@@ -44,7 +43,6 @@ export default function App() {
                 </section>
             </main>
             <Footer />
-            <ScrollToTop />
         </div>
     );
 }

@@ -20,6 +20,14 @@
         "skills.others": "Others",
         "skills.english": "English",
 
-        "projects.title": "Projects"
+        "projects.title": "Projects",
+        "projects.button.site": "ACCESS SITE",
+        "projects.button.code": "VIEW CODE",
+        "projects.pizra.title": "Pizra Pizzeria",
+        "projects.pizra.description": "A complete and responsive website for a fictional pizzeria.",
+        "projects.plansul.title": "Recruitment Page",
+        "projects.plansul.description": "A real and responsive website created to recruit new employees for Plansul.",
+        "projects.tinder.title": "Interactive Tinder",
+        "projects.tinder.description": "Built with the Hammer.JS library, allowing users to drag and pinch the photo. The phone is also my own artwork created purely with CSS."
     }
 }

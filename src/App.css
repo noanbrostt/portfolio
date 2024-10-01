@@ -7,8 +7,8 @@
     transition: background-color 300ms, color 300ms;
 }
 .light {
-    --clr-bg: #c1a3e8; /* Puxado para o bege */
-    --clr-bg-alt: #d9b3ff; /* Alternativa mais clara, também com tom de bege */
+    --clr-bg: #d5c7e6; /* Puxado para o bege */
+    --clr-bg-alt: #e2c4ff; /* Alternativa mais clara, também com tom de bege */
     --clr-fg: #555; /* Manter o texto mais escuro */
     --clr-fg-alt: #222222;
     --clr-fg-alt-rgb: 68, 68, 68;
@@ -25,25 +25,6 @@
     --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-/* .light {
-    --clr-bg: #fddaff; 
-    --clr-bg-alt: floralwhite; 
-    --clr-fg: #555;
-    --clr-fg-alt: #444444;
-    --clr-fg-alt-rgb: 68, 68, 68;
-    --clr-primary: #2978b5; 
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.dark {
-    --clr-bg: #2d2742;
-    --clr-bg-alt: #3a3555;
-    --clr-fg: #bcbccf;
-    --clr-fg-alt: #dbdbff;
-    --clr-fg-alt-rgb: 219, 219, 255;
-    --clr-primary: #a092d9;
-    --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-} */
 main {
     max-width: 1100px;
     width: 95%;

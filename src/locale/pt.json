@@ -20,6 +20,14 @@
         "skills.others": "Outros",
         "skills.english": "Inglês",
 
-        "projects.title": "Projetos"
+        "projects.title": "Projetos",
+        "projects.button.site": "ACESSAR SITE",
+        "projects.button.code": "VER CÓDIGO",
+        "projects.pizra.title": "Pizra Pizzaria",
+        "projects.pizra.description": "Site completo e responsivo para uma pizzaria ficcional.",
+        "projects.plansul.title": "Página de Recrutamento",
+        "projects.plansul.description": "Site real e responsivo criado pra capturar novos funcionários para a Plansul.",
+        "projects.tinder.title": "Tinder Interativo",
+        "projects.tinder.description": "Foi feito com a biblioteca Hammer.JS que permite arrastar e pinçar a foto. Inclusive o celular é uma arte minha feita apenas com CSS."
     }
 }
