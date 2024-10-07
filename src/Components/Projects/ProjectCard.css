@@ -8,8 +8,10 @@
     width: calc(50% - 11px);
     transition: 1.6s ease;
     box-shadow: 0px 0px 8px #00000040;
-    height: 214.6px;
+    height: fit-content;
+    height: -moz-fit-content;
     cursor: pointer;
+    line-height: 0;
 }
 .imgContainer:hover {
     scale: 0.95;

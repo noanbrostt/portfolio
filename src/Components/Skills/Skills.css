@@ -64,8 +64,6 @@
     width: 90%;
     border-radius: 6px;
     background-color: var(--clr-fg-alt);
-    animation: progress 0.4s ease-in-out forwards;
-    opacity: 0;
 }
 .skillPer.html {
     width: 90%;
@@ -96,16 +94,6 @@
 }
 .skillPer.ingles {
     width: 67%;
-}
-@keyframes progress {
-    0% {
-        width: 0;
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 .skillPer .tooltip {
     position: absolute;

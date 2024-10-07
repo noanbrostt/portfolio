@@ -28,6 +28,9 @@
         "projects.plansul.title": "Recruitment Page",
         "projects.plansul.description": "A real and responsive website created to recruit new employees for Plansul.",
         "projects.tinder.title": "Interactive Tinder",
-        "projects.tinder.description": "Built with the Hammer.JS library, allowing users to drag and pinch the photo. The phone is also my own artwork created purely with CSS."
+        "projects.tinder.description": "Built with the Hammer.JS library, allowing users to drag and pinch the photo. The phone is also my own artwork created purely with CSS.",
+
+        "contact.title": "GET IN <dif>TOUCH</dif>",
+        "contact.position": "Full Stack & Front-End Developer"
     }
 }

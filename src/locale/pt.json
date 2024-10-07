@@ -28,6 +28,9 @@
         "projects.plansul.title": "Página de Recrutamento",
         "projects.plansul.description": "Site real e responsivo criado pra capturar novos funcionários para a Plansul.",
         "projects.tinder.title": "Tinder Interativo",
-        "projects.tinder.description": "Foi feito com a biblioteca Hammer.JS que permite arrastar e pinçar a foto. Inclusive o celular é uma arte minha feita apenas com CSS."
+        "projects.tinder.description": "Foi feito com a biblioteca Hammer.JS que permite arrastar e pinçar a foto. Inclusive o celular é uma arte minha feita apenas com CSS.",
+
+        "contact.title": "FALE <dif>COMIGO</dif>",
+        "contact.position": "Desenvolvedor Full Stack & Front-End"
     }
 }

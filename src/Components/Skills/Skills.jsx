@@ -29,7 +29,7 @@ export const Skills = () => {
                                 <span className="title">HTML / CSS / JS</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer html">
+                                    <span className="skillPer html" data-aos="width-animation">
                                         <span className="tooltip">90%</span>
                                     </span>
                                 </div>
@@ -42,7 +42,7 @@ export const Skills = () => {
                                 <span className="title">JQuery</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer jquery">
+                                    <span className="skillPer jquery" data-aos="width-animation">
                                         <span className="tooltip">90%</span>
                                     </span>
                                 </div>
@@ -55,7 +55,7 @@ export const Skills = () => {
                                 <span className="title">Boostrap</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer boostrap">
+                                    <span className="skillPer boostrap" data-aos="width-animation">
                                         <span className="tooltip">75%</span>
                                     </span>
                                 </div>
@@ -68,7 +68,7 @@ export const Skills = () => {
                                 <span className="title">React</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer react">
+                                    <span className="skillPer react" data-aos="width-animation">
                                         <span className="tooltip">55%</span>
                                     </span>
                                 </div>
@@ -81,7 +81,7 @@ export const Skills = () => {
                                 <span className="title">Vue</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer vue">
+                                    <span className="skillPer vue" data-aos="width-animation">
                                         <span className="tooltip">40%</span>
                                     </span>
                                 </div>
@@ -97,7 +97,7 @@ export const Skills = () => {
                                 <span className="title">PHP</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer php">
+                                    <span className="skillPer php" data-aos="width-animation">
                                         <span className="tooltip">80%</span>
                                     </span>
                                 </div>
@@ -110,7 +110,7 @@ export const Skills = () => {
                                 <span className="title">Laravel</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer laravel">
+                                    <span className="skillPer laravel" data-aos="width-animation">
                                         <span className="tooltip">80%</span>
                                     </span>
                                 </div>
@@ -125,7 +125,7 @@ export const Skills = () => {
                                 </span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer sql">
+                                    <span className="skillPer sql" data-aos="width-animation">
                                         <span className="tooltip">90%</span>
                                     </span>
                                 </div>
@@ -143,7 +143,7 @@ export const Skills = () => {
                                 <span className="title">Git / GitHub</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer git">
+                                    <span className="skillPer git" data-aos="width-animation">
                                         <span className="tooltip">65%</span>
                                     </span>
                                 </div>
@@ -158,7 +158,7 @@ export const Skills = () => {
                                 </span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer ingles">
+                                    <span className="skillPer ingles" data-aos="width-animation">
                                         <span className="tooltip">B2</span>
                                     </span>
                                 </div>

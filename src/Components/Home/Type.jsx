@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 import Typewriter from "typewriter-effect";
 
 export const Type = () => {
-    const { t, i18n: {changeLanguage, language} } = useTranslation();
-    const [currentLanguage, setCurrentLanguage] = useState(language);  
+    const { t } = useTranslation();
 
     return (
         <>
