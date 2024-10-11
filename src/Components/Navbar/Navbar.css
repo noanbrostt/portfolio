@@ -98,8 +98,9 @@ input:checked + .slider:before {
     gap: 10px;
     font-size: 26px;
   }
-  .link--nav {
-    color: var(--clr-fg);
+  header:not(.compact) .nav__hamburger {
+    color: #33ccff;
+    
   }
   .nav__list-item {
     margin: 0.5em 0;

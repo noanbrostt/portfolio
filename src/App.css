@@ -130,10 +130,6 @@ section {
     color: var(--clr-primary);
     transition: 3;
 }
-/* .btn--icon:hover,
-.btn--icon:focus {
-    color: var(--clr-bg-alt);
-} */
 .btn--icon:active {
     transform: translateY(-5px);
 }

@@ -25,7 +25,7 @@ const LanguageToggle = () => {
           setIsFlying(false);
         }, 600); // Duração da animação
       }
-    };
+    };    
 
     return (
         <div className="language-toggle">

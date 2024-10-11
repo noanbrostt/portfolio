@@ -8,7 +8,7 @@ import { Trans } from "react-i18next";
 import LanguageToggle from './LanguageToggle';
 
 export const Navbar = () => {
-  const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
+  const [{ themename, toggletheme }] = React.useContext(ThemeContext);
   const [showNavList, setShowNavList] = React.useState(false);
 
   const toggleNavList = (id) => {
@@ -89,7 +89,7 @@ export const Navbar = () => {
 
         {/* From Uiverse.io by juanpabl0svn, adapted by me */}
         <label htmlFor="switch" className="switch">
-          <input id="switch" type="checkbox" onClick={toggeltheme} />
+          <input id="switch" type="checkbox" onClick={toggletheme} />
           <span className="slider"></span>
           <span className="decoration"></span>
         </label>  
