@@ -58,7 +58,6 @@
 .inactive {
   opacity: 0.5; /* Opacidade reduzida para o idioma não selecionado */
   filter: grayscale(1);
-  cursor: pointer;
 }
 .flags {
   width: 26px;

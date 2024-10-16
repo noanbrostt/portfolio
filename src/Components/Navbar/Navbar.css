@@ -22,7 +22,6 @@
   display: inline-block;
   width: 4em;
   height: 2em;
-  cursor: pointer;
   scale: .65;
 }
 .switch input {
@@ -33,7 +32,6 @@
 .slider {
   --background: #20262c;
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;

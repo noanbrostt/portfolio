@@ -19,7 +19,7 @@
     content: " ";
     display: none;
     width: 90%;
-    margin: 40px auto;
+    margin: 40px auto 30px;
     background-color: var(--clr-primary);
     height: 2px;
     border-radius: 10px;

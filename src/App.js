@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 
+import { GooeyCursor } from './Components/GooeyCursor/GooeyCursor';
 import { Header } from "./Components/Header/Header";
 import { Home } from "./Components/Home/Home";
 import { About } from "./Components/About/About";
@@ -22,6 +23,7 @@ export default function App() {
 
     return (
         <div id="top" className={`${themename} app`}>
+            <GooeyCursor />
             <Header />
             <main>
                 <section id="home">
