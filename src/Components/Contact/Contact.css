@@ -24,6 +24,9 @@
     width: 70px;
     gap: 30px;
 }
+.leftSection a {
+    cursor: none;
+}
 .leftSection svg {
     scale: 1.4;
     transition: .4s;

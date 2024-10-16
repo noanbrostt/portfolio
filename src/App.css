@@ -82,6 +82,7 @@ section {
 }
 .link--icon {
     color: var(--clr-fg);
+    cursor: none;
 }
 .btn {
     display: block;

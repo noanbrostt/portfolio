@@ -16,6 +16,7 @@
 .radio-buttons label {
   display: flex;
   transition: opacity 0.3s;
+  cursor: none;
 }
 .separator {
   margin: 0 5px;
