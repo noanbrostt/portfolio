@@ -68,7 +68,7 @@ export const Home = () => {
                         <LinkedInIcon />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/shreyas-g-khakal/"
+                        href="https://drive.google.com/file/d/1ePHlE76P4dVXpHfxugwWst-bvuYlg2mg/view?usp=drive_link"
                         aria-label="curriculum"
                         className="link link--icon"
                         target="_blank"
