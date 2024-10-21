@@ -108,4 +108,7 @@ input:checked + .slider:before {
     display: flex;
     z-index: 2;
   }
+  .link--nav {
+    color: var(--clr-fg);
+  }
 }

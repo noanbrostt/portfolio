@@ -21,7 +21,7 @@ export const Skills = () => {
                 </h2>
                 <div className="techsection">
                     {/* From Uiverse.io by Juanes200122, adapted by me */}
-                    <div className="skillBox">
+                    <div className="skillBox" data-aos="fade-right">
                         <h4>Front-End</h4>
                         <div className="skill">
                             <DiJavascript />
@@ -89,7 +89,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skillBox">
+                    <div className="skillBox" data-aos="fade-right">
                         <h4>Back-End</h4>
                         <div className="skill">
                             <FaPhp />
@@ -133,7 +133,7 @@ export const Skills = () => {
                         </div>
                     </div>
 
-                    <div className="skillBox">
+                    <div className="skillBox" data-aos="fade-right">
                         <h4>
                             <Trans i18nKey="skills.others" />
                         </h4>

@@ -4,7 +4,7 @@ import { Trans } from "react-i18next";
 
 const ProjectCard = ({ title, description, deployUrl, codeUrl, imageUrl }) => {
     return (
-        <div className="project">
+        <div className="project" data-aos="fade-right">
             <div
                 className="imgContainer"
                 onClick={() => window.open(deployUrl, "_blank")}

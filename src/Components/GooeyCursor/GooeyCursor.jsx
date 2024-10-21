@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
-import "./GooeyCursor.css"; // Importando o CSS que foi criado
+import React, { useEffect, useState } from "react";
+import "./GooeyCursor.css";
 
 export const GooeyCursor = () => {
+    const [isCursorVisible, setIsCursorVisible] = useState(true);
+
     useEffect(() => {
         const TAIL_LENGTH = 40;
         const cursor = document.getElementById("cursor");
@@ -11,9 +13,17 @@ export const GooeyCursor = () => {
         let cursorCircles;
         let cursorHistory = Array(TAIL_LENGTH).fill({ x: 0, y: 0 });
 
+        let inactivityTimeout;
+
         const onMouseMove = (event) => {
             mouseX = event.clientX;
             mouseY = event.clientY;
+            setIsCursorVisible(true);
+
+            clearTimeout(inactivityTimeout);
+            inactivityTimeout = setTimeout(() => {
+                setIsCursorVisible(false);
+            }, 1200);
         };
 
         const onClick = () => {
@@ -62,7 +72,6 @@ export const GooeyCursor = () => {
         initCursor();
         updateCursor();
 
-        // Limpa os listeners quando o componente é desmontado
         return () => {
             document.removeEventListener("mousemove", onMouseMove);
             document.removeEventListener("click", onClick);
@@ -71,7 +80,7 @@ export const GooeyCursor = () => {
 
     return (
         <>
-            <div id="cursor"></div>
+            <div id="cursor" className={!isCursorVisible ? "hidden" : ""}></div>
         </>
     );
 };
