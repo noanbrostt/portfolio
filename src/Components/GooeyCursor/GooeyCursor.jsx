@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./GooeyCursor.css";
 
 export const GooeyCursor = () => {
-    const [isCursorVisible, setIsCursorVisible] = useState(true);
+    const [isCursorVisible, setIsCursorVisible] = useState(false);
 
     useEffect(() => {
         const TAIL_LENGTH = 40;
