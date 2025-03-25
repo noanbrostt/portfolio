@@ -14,7 +14,7 @@
         "type.atleta": "Amateur Volleyball Athlete",
 
         "about.title": "ABOUT <1>ME</1>",
-        "about.text": "Hello, welcome! <wave>🖐🏻</wave><br/><br/>My name is <dif>{{name}}</dif>, I live in <dif>{{city}}</dif>, I have a degree in <dif>Systems Analysis and Development</dif> and I am finishing my <dif>post-graduation in Front-End</dif>.<br/><br/>I discovered programming in engineering school, and after getting my first job, I had to work in various areas, but it was in <dif>web development</dif>, especially in <dif>front-end</dif>, that I found my calling.<br/><br/>Today I am a <dif>Full Stack PHP Developer for 3 years</dif> and work outsourced for <dif>{{company}}</dif>.",
+        "about.text": "Hello, welcome! <wave>🖐🏻</wave><br/><br/>My name is <dif>{{name}}</dif>, I live in <dif>{{city}}</dif>, I have a degree in <dif>Systems Analysis and Development</dif> and a <dif>postgraduate degree in Front-End</dif>.<br/><br/>I discovered programming in engineering school, and after getting my first job, I had to work in various areas, but it was in <dif>web development</dif>, especially in <dif>front-end</dif>, that I found my calling.<br/><br/>Today I am a <dif>Full Stack PHP Developer for 3 years</dif> and work outsourced for <dif>{{company}}</dif>.",
 
         "skills.title": "SKILLS",
         "skills.others": "Others",
