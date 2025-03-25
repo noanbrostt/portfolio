@@ -25,7 +25,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 1.  **Clone o repositório:**
 
     ```bash
-    git clone [https://github.com/noanbrostt/portfolio.git](https://github.com/noanbrostt/portfolio.git)
+    git clone https://github.com/noanbrostt/portfolio.git
     ```
 
 2.  **Acesse a pasta do projeto:**
