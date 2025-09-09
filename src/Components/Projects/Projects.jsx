@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import ProjectCard from './ProjectCard';
 import { Trans } from "react-i18next";
+import admin from "../../assets/projects/Admin.png";
 import pizra from "../../assets/projects/Pizra.png";
 import plansul from "../../assets/projects/recrutamento-plansul.png";
 import tinder from "../../assets/projects/tinder.png";
@@ -15,6 +16,14 @@ export const Projects = () => {
                     <Trans i18nKey="projects.title" />
                 </h2>
                 <div className="allProjects">
+
+                    <ProjectCard
+                        title={<Trans i18nKey="projects.admin.title" />}
+                        description={<Trans i18nKey="projects.admin.description" />}
+                        deployUrl="https://noanbrostt.github.io/Plansul-Admin/"
+                        codeUrl="https://github.com/noanbrostt/Plansul-Admin/"
+                        imageUrl={admin}
+                    />
 
                     <ProjectCard
                         title={<Trans i18nKey="projects.pizra.title" />}

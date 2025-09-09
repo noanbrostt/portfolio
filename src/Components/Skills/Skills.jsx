@@ -2,14 +2,14 @@ import React from "react";
 import "./Skills.css";
 import {
     FaReact,
-    FaVuejs,
+    FaDocker,
     FaPhp,
     FaLaravel,
     FaGithub,
     FaFlagUsa,
 } from "react-icons/fa";
 import { DiJqueryLogo, DiJavascript, DiPostgresql } from "react-icons/di";
-import { BsBootstrap } from "react-icons/bs";
+import { SiTailwindcss } from "react-icons/si";
 import { Trans } from "react-i18next";
 
 export const Skills = () => {
@@ -50,12 +50,12 @@ export const Skills = () => {
                         </div>
 
                         <div className="skill">
-                            <BsBootstrap />
+                            <SiTailwindcss />
                             <div>
-                                <span className="title">Boostrap</span>
+                                <span className="title">Tailwind</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer boostrap" data-aos="width-animation">
+                                    <span className="skillPer tailwind" data-aos="width-animation">
                                         <span className="tooltip">75%</span>
                                     </span>
                                 </div>
@@ -69,19 +69,19 @@ export const Skills = () => {
 
                                 <div className="skillBar">
                                     <span className="skillPer react" data-aos="width-animation">
-                                        <span className="tooltip">55%</span>
+                                        <span className="tooltip">65%</span>
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="skill">
-                            <FaVuejs />
+                            <FaDocker />
                             <div>
-                                <span className="title">Vue</span>
+                                <span className="title">Docker</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer vue" data-aos="width-animation">
+                                    <span className="skillPer docker" data-aos="width-animation">
                                         <span className="tooltip">40%</span>
                                     </span>
                                 </div>
@@ -144,7 +144,7 @@ export const Skills = () => {
 
                                 <div className="skillBar">
                                     <span className="skillPer git" data-aos="width-animation">
-                                        <span className="tooltip">65%</span>
+                                        <span className="tooltip">75%</span>
                                     </span>
                                 </div>
                             </div>

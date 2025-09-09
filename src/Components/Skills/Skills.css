@@ -71,13 +71,13 @@
 .skillPer.jquery {
     width: 90%;
 }
-.skillPer.boostrap {
+.skillPer.tailwind {
     width: 75%;
 }
 .skillPer.react {
-    width: 55%;
+    width: 65%;
 }
-.skillPer.vue {
+.skillPer.docker {
     width: 40%;
 }
 .skillPer.php {
@@ -90,7 +90,7 @@
     width: 90%;
 }
 .skillPer.git {
-    width: 65%;
+    width: 75%;
 }
 .skillPer.ingles {
     width: 67%;

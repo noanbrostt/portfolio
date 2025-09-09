@@ -1,5 +1,6 @@
 #home {
-    margin-bottom: 120px;
+    margin-bottom: 20px;
+    height: calc(100vh - 80px);
 }
 #homeBkg {
     position: absolute;
