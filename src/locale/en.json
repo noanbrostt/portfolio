@@ -7,14 +7,14 @@
         "nav.contact": "Contact",
         "nav.resume": "Resume",
 
-        "home.greeting": "Hello! I am <1>{{name}}</1>, Full Stack PHP and Front-End artist.",
+        "home.greeting": "Hello! I am <1>{{name}}</1>, Full Stack Dev and Front-End artist.",
 
-        "type.full": "Full Stack Developer",
-        "type.front": "Front-End Specialist",
+        "type.full": "Mid-level Full Stack Developer",
+        "type.front": "React & UX/UI Specialist",
         "type.atleta": "Amateur Volleyball Athlete",
 
         "about.title": "ABOUT <1>ME</1>",
-        "about.text": "Hello, welcome! <wave>🖐🏻</wave><br/><br/>My name is <dif>{{name}}</dif>, I live in <dif>{{city}}</dif>, I have a degree in <dif>Systems Analysis and Development</dif> and a <dif>postgraduate degree in Front-End</dif>.<br/><br/>I discovered programming in engineering school, and after getting my first job, I had to work in various areas, but it was in <dif>web development</dif>, especially in <dif>front-end</dif>, that I found my calling.<br/><br/>Today I am a <dif>Full Stack PHP Developer for 3 years</dif> and work outsourced for <dif>{{company}}</dif>.",
+        "about.text": "Hello, welcome! <wave>🖐🏻</wave><br/><br/>My name is <dif>{{name}}</dif>, I live in <dif>{{city}}</dif>, I have a degree in <dif>Systems Analysis and Development</dif> and a <dif>postgraduate degree in Front-End</dif>.<br/><br/>I currently work as a <dif>Mid-level Systems Analyst</dif> at Plansul, focusing on the <dif>React ecosystem</dif>, where I am responsible for creating high-interactivity interfaces and complex front-end logic.<br/><br/>With a solid track record in developing applications for large operations like <dif>{{company}}</dif>, I excel in combining full-stack mastery (PHP/Laravel/SQL) with delivering <dif>fluid UX</dif> and <dif>clean, functional interfaces</dif>.",
 
         "skills.title": "SKILLS",
         "skills.others": "Others",
@@ -33,6 +33,6 @@
         "projects.tinder.description": "Built with the Hammer.JS library, allowing users to drag and pinch the photo. The phone is also my own artwork created purely with CSS.",
 
         "contact.title": "GET IN <dif>TOUCH</dif>",
-        "contact.position": "Full Stack & Front-End Developer"
+        "contact.position": "Mid-level Systems Analyst | Front-End Specialist"
     }
 }

@@ -7,14 +7,14 @@
         "nav.contact": "Contato",
         "nav.resume": "Currículo",
 
-        "home.greeting": "Olá! Eu sou <1>{{name}}</1>, Full Stack PHP e artista do Front-End.",
+        "home.greeting": "Olá! Eu sou <1>{{name}}</1>, Dev Full Stack e artista do Front-End.",
 
-        "type.full": "Desenvolvedor Full Stack",
-        "type.front": "Especialista em Front-End",
+        "type.full": "Desenvolvedor Full Stack Pleno",
+        "type.front": "Especialista em React & UX/UI",
         "type.atleta": "Atleta Amador de Vôlei",
 
         "about.title": "SOBRE <1>MIM</1>",
-        "about.text": "Olá, seja bem vindo! <wave>🖐🏻</wave><br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>Análise e Desenvolvimento de Sistemas</dif> e <dif>pós-graduado em Front-End</dif>.<br/><br/>Conheci a programação na faculdade de engenharia, e após conseguir meu primeiro emprego precisei desempenhar em diversas áreas, mas foi no <dif>desenvolvimento web</dif>, principalmente no <dif>front-end</dif>, que descobri minha vocação.<br/><br/>Hoje sou <dif>Desenvolvedor PHP Full Stack há 3 anos</dif> e trabalho de forma terceirizada para a <dif>{{company}}</dif>.",
+        "about.text": "Olá, seja bem vindo! <wave>🖐🏻</wave><br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>Análise e Desenvolvimento de Sistemas</dif> e <dif>pós-graduado em Front-End</dif>.<br/><br/>Atualmente atuo como <dif>Analista de Sistemas Pleno</dif>, com foco total na evolução para o <dif>ecossistema React</dif>, onde sou responsável por criar interfaces de alta interatividade e lógica complexa de front-end.<br/><br/>Com uma trajetória sólida no desenvolvimento de aplicações para grandes operações como a <dif>{{company}}</dif>, me destaco pela facilidade em unir o domínio do stack (PHP/Laravel/SQL) com uma entrega de <dif>UX fluida</dif> e <dif>interfaces limpas e funcionais</dif>.",
 
         "skills.title": "HABILIDADES",
         "skills.others": "Outros",
@@ -33,6 +33,6 @@
         "projects.tinder.description": "Foi feito com a biblioteca Hammer.JS que permite arrastar e pinçar a foto. Inclusive o celular é uma arte minha feita apenas com CSS.",
 
         "contact.title": "FALE <dif>COMIGO</dif>",
-        "contact.position": "Desenvolvedor Full Stack & Front-End"
+        "contact.position": "Analista de Sistemas Pleno | Especialista Front-End"
     }
 }
