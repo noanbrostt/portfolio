@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.037d85f4.css",
-    "main.js": "/portfolio/static/js/main.299f9a64.js",
+    "main.css": "/portfolio/static/css/main.478ea132.css",
+    "main.js": "/portfolio/static/js/main.4da30705.js",
     "static/media/foto_perfil.png": "/portfolio/static/media/foto_perfil.3f19c5e8b88784118c56.png",
     "static/media/home_bkg.jpg": "/portfolio/static/media/home_bkg.db087e87eab3fc00735d.jpg",
     "static/media/Pizra.png": "/portfolio/static/media/Pizra.85a4ea36d890b9a4038a.png",
     "static/media/recrutamento-plansul.png": "/portfolio/static/media/recrutamento-plansul.d6ead887a8c3ae7bae41.png",
     "static/media/tinder.png": "/portfolio/static/media/tinder.9f421f1aa90ee3cfb3db.png",
+    "static/media/Admin.png": "/portfolio/static/media/Admin.75a58517c5feb7867e55.png",
     "static/media/brazil.png": "/portfolio/static/media/brazil.27703b254c83ddc2ebc6.png",
     "static/media/united-states.png": "/portfolio/static/media/united-states.348322a7eb6fa906d005.png",
     "index.html": "/portfolio/index.html",
-    "main.037d85f4.css.map": "/portfolio/static/css/main.037d85f4.css.map",
-    "main.299f9a64.js.map": "/portfolio/static/js/main.299f9a64.js.map"
+    "main.478ea132.css.map": "/portfolio/static/css/main.478ea132.css.map",
+    "main.4da30705.js.map": "/portfolio/static/js/main.4da30705.js.map"
   },
   "entrypoints": [
-    "static/css/main.037d85f4.css",
-    "static/js/main.299f9a64.js"
+    "static/css/main.478ea132.css",
+    "static/js/main.4da30705.js"
   ]
 }
