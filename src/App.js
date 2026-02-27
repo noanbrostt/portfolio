@@ -15,11 +15,17 @@ import { Contact } from "./Components/Contact/Contact";
 
 export default function App() {
     const [{ themename }] = React.useContext(ThemeContext);
+    const { i18n } = useTranslation();
+
     React.useEffect(() => {
         Aos.init({ duration: 1400 });
-    }, []);
 
-    useTranslation();
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        if (langParam && (langParam === 'en' || langParam === 'pt')) {
+            i18n.changeLanguage(langParam);
+        }
+    }, [i18n]);
 
     return (
         <div id="top" className={`${themename} app`}>

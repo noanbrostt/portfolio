@@ -8,10 +8,15 @@ import us_flag from "../../assets/united-states.png";
 const LanguageToggle = () => {
     const {
         i18n: { changeLanguage, language },
+        i18n
     } = useTranslation();
     const [currentLanguage, setCurrentLanguage] = useState(language);
     const [isFlying, setIsFlying] = useState(false);
     const [direction, setDirection] = useState("ptToEn"); // Para controlar a direção do voo
+
+    React.useEffect(() => {
+        setCurrentLanguage(i18n.language);
+    }, [i18n.language]);
 
     const handleToggle = (lang) => {
       if (currentLanguage !== lang) {
@@ -21,6 +26,12 @@ const LanguageToggle = () => {
         setTimeout(() => {
           const newLanguage = currentLanguage === "pt" ? "en" : "pt";
           changeLanguage(newLanguage);
+
+          // Atualiza a URL sem recarregar a página
+          const url = new URL(window.location);
+          url.searchParams.set('lang', newLanguage);
+          window.history.pushState({}, '', url);
+
           setCurrentLanguage(newLanguage);
           setIsFlying(false);
         }, 600); // Duração da animação
