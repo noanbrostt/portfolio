@@ -17,6 +17,7 @@
         "about.text": "Olá, seja bem vindo! <wave>🖐🏻</wave><br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>Análise e Desenvolvimento de Sistemas</dif> e <dif>pós-graduado em Front-End</dif>.<br/><br/>Atualmente atuo como <dif>Analista de Sistemas Pleno</dif>, com foco total na evolução para o <dif>ecossistema React</dif>, onde sou responsável por criar interfaces de alta interatividade e lógica complexa de front-end.<br/><br/>Com uma trajetória sólida no desenvolvimento de aplicações para grandes operações como a <dif>{{company}}</dif>, me destaco pela facilidade em unir o domínio do stack (PHP/Laravel/SQL) com uma entrega de <dif>UX fluida</dif> e <dif>interfaces limpas e funcionais</dif>.",
 
         "skills.title": "HABILIDADES",
+        "skills.backend": "Back-End / Banco",
         "skills.others": "Outros",
         "skills.english": "Inglês",
 

@@ -4,12 +4,14 @@ import {
     FaReact,
     FaDocker,
     FaPhp,
-    FaLaravel,
     FaGithub,
     FaFlagUsa,
+    FaNodeJs,
+    FaRobot,
 } from "react-icons/fa";
-import { DiJqueryLogo, DiJavascript, DiPostgresql } from "react-icons/di";
-import { SiTailwindcss } from "react-icons/si";
+import { DiJavascript, DiPostgresql } from "react-icons/di";
+import { SiTailwindcss, SiTypescript, SiMicrosoftsqlserver, SiGo } from "react-icons/si";
+import { MdDesignServices, MdPhoneIphone } from "react-icons/md";
 import { Trans } from "react-i18next";
 
 export const Skills = () => {
@@ -23,6 +25,20 @@ export const Skills = () => {
                     {/* From Uiverse.io by Juanes200122, adapted by me */}
                     <div className="skillBox" data-aos="fade-right">
                         <h4>Front-End</h4>
+                        
+                        <div className="skill">
+                            <MdDesignServices />
+                            <div>
+                                <span className="title">User Experience (UX)</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer ux" data-aos="width-animation">
+                                        <span className="tooltip">95%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="skill">
                             <DiJavascript />
                             <div>
@@ -37,13 +53,13 @@ export const Skills = () => {
                         </div>
 
                         <div className="skill">
-                            <DiJqueryLogo />
+                            <FaReact />
                             <div>
-                                <span className="title">JQuery</span>
+                                <span className="title">React</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer jquery" data-aos="width-animation">
-                                        <span className="tooltip">90%</span>
+                                    <span className="skillPer react" data-aos="width-animation">
+                                        <span className="tooltip">85%</span>
                                     </span>
                                 </div>
                             </div>
@@ -56,33 +72,33 @@ export const Skills = () => {
 
                                 <div className="skillBar">
                                     <span className="skillPer tailwind" data-aos="width-animation">
-                                        <span className="tooltip">75%</span>
+                                        <span className="tooltip">85%</span>
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="skill">
-                            <FaReact />
+                            <MdPhoneIphone />
                             <div>
-                                <span className="title">React</span>
+                                <span className="title">React Native</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer react" data-aos="width-animation">
+                                    <span className="skillPer reactnative" data-aos="width-animation">
+                                        <span className="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="skill">
+                            <SiTypescript />
+                            <div>
+                                <span className="title">TypeScript</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer typescript" data-aos="width-animation">
                                         <span className="tooltip">65%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaDocker />
-                            <div>
-                                <span className="title">Docker</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer docker" data-aos="width-animation">
-                                        <span className="tooltip">40%</span>
                                     </span>
                                 </div>
                             </div>
@@ -90,28 +106,31 @@ export const Skills = () => {
                     </div>
 
                     <div className="skillBox" data-aos="fade-right">
-                        <h4>Back-End</h4>
+                        <h4>
+                            <Trans i18nKey="skills.backend" />
+                        </h4>
+
                         <div className="skill">
-                            <FaPhp />
+                            <SiMicrosoftsqlserver />
                             <div>
-                                <span className="title">PHP</span>
+                                <span className="title">SQL Server</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer php" data-aos="width-animation">
-                                        <span className="tooltip">80%</span>
+                                    <span className="skillPer sql" data-aos="width-animation">
+                                        <span className="tooltip">90%</span>
                                     </span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="skill">
-                            <FaLaravel />
+                            <FaPhp />
                             <div>
-                                <span className="title">Laravel</span>
+                                <span className="title">PHP / Laravel</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer laravel" data-aos="width-animation">
-                                        <span className="tooltip">80%</span>
+                                    <span className="skillPer phplaravel" data-aos="width-animation">
+                                        <span className="tooltip">85%</span>
                                     </span>
                                 </div>
                             </div>
@@ -120,13 +139,37 @@ export const Skills = () => {
                         <div className="skill">
                             <DiPostgresql />
                             <div>
-                                <span className="title">
-                                    SQL Server / PostgreSQL
-                                </span>
+                                <span className="title">PostgreSQL</span>
 
                                 <div className="skillBar">
-                                    <span className="skillPer sql" data-aos="width-animation">
-                                        <span className="tooltip">90%</span>
+                                    <span className="skillPer postgresql" data-aos="width-animation">
+                                        <span className="tooltip">80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="skill">
+                            <FaNodeJs />
+                            <div>
+                                <span className="title">NodeJS</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer nodejs" data-aos="width-animation">
+                                        <span className="tooltip">25%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="skill">
+                            <SiGo />
+                            <div>
+                                <span className="title">Golang</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer golang" data-aos="width-animation">
+                                        <span className="tooltip">20%</span>
                                     </span>
                                 </div>
                             </div>
@@ -160,6 +203,32 @@ export const Skills = () => {
                                 <div className="skillBar">
                                     <span className="skillPer ingles" data-aos="width-animation">
                                         <span className="tooltip">B2</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="skill">
+                            <FaRobot />
+                            <div>
+                                <span className="title">Agente de IA</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer agenteia" data-aos="width-animation">
+                                        <span className="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="skill">
+                            <FaDocker />
+                            <div>
+                                <span className="title">Docker</span>
+
+                                <div className="skillBar">
+                                    <span className="skillPer docker" data-aos="width-animation">
+                                        <span className="tooltip">30%</span>
                                     </span>
                                 </div>
                             </div>

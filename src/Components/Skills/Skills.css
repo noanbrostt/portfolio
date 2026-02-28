@@ -4,13 +4,13 @@
 .techsection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 11px;
 }
-.skillBox:nth-child(1) { grid-area: 1 / 1 / 7 / 2; }
-.skillBox:nth-child(2) { grid-area: 1 / 2 / 5 / 3; }
-.skillBox:nth-child(3) { grid-area: 5 / 2 / 8 / 3; }
+.skillBox:nth-child(1) { grid-area: 1 / 1 / 13 / 2; }
+.skillBox:nth-child(2) { grid-area: 1 / 2 / 7 / 3; }
+.skillBox:nth-child(3) { grid-area: 7 / 2 / 13 / 3; }
 .techsection h4 {
     text-align: center;
     margin-block: 12px -10px;
@@ -65,26 +65,41 @@
     border-radius: 6px;
     background-color: var(--clr-fg-alt);
 }
+.skillPer.ux {
+    width: 95%;
+}
 .skillPer.html {
     width: 90%;
 }
-.skillPer.jquery {
-    width: 90%;
+.skillPer.react {
+    width: 85%;
+}
+.skillPer.reactnative {
+    width: 70%;
 }
 .skillPer.tailwind {
-    width: 75%;
+    width: 85%;
 }
-.skillPer.react {
+.skillPer.typescript {
     width: 65%;
 }
 .skillPer.docker {
-    width: 40%;
+    width: 30%;
 }
-.skillPer.php {
+.skillPer.agenteia {
+    width: 60%;
+}
+.skillPer.phplaravel {
+    width: 85%;
+}
+.skillPer.postgresql {
     width: 80%;
 }
-.skillPer.laravel {
-    width: 80%;
+.skillPer.nodejs {
+    width: 25%;
+}
+.skillPer.golang {
+    width: 20%;
 }
 .skillPer.sql {
     width: 90%;

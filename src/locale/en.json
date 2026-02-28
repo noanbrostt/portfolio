@@ -17,6 +17,7 @@
         "about.text": "Hello, welcome! <wave>🖐🏻</wave><br/><br/>My name is <dif>{{name}}</dif>, I live in <dif>{{city}}</dif>, I have a degree in <dif>Systems Analysis and Development</dif> and a <dif>postgraduate degree in Front-End</dif>.<br/><br/>I currently work as a <dif>Mid-level Systems Analyst</dif> at Plansul, focusing on the <dif>React ecosystem</dif>, where I am responsible for creating high-interactivity interfaces and complex front-end logic.<br/><br/>With a solid track record in developing applications for large operations like <dif>{{company}}</dif>, I excel in combining full-stack mastery (PHP/Laravel/SQL) with delivering <dif>fluid UX</dif> and <dif>clean, functional interfaces</dif>.",
 
         "skills.title": "SKILLS",
+        "skills.backend": "Back-End / Database",
         "skills.others": "Others",
         "skills.english": "English",
 
