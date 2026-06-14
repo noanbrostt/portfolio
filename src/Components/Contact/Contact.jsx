@@ -3,10 +3,8 @@ import "./Contact.css";
 import { ThemeContext } from "../../Context/theme";
 import { Trans } from "react-i18next";
 
-import GitHubIcon from "@material-ui/icons/GitHub";
-import EmailIcon from "@material-ui/icons/Email";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
 
@@ -30,7 +28,7 @@ export const Contact = () => {
                             rel="noreferrer"
                             className="github"
                         >
-                            <GitHubIcon />
+                            <FaGithub />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/noan-caliel-brostt-74ab66187/"
@@ -39,7 +37,7 @@ export const Contact = () => {
                             rel="noreferrer"
                             className="linkedin"
                         >
-                            <LinkedInIcon />
+                            <FaLinkedin />
                         </a>
                     </div>
                     <div className="card">
@@ -49,10 +47,10 @@ export const Contact = () => {
                         </h6>
                         <div className="contactVerticalLine"></div>
                         <p>
-                            <WhatsAppIcon /> (41) 99994-6316
+                            <FaWhatsapp /> (41) 99994-6316
                         </p>
                         <p>
-                            <EmailIcon /> calielnoan@gmail.com
+                            <MdEmail /> calielnoan@gmail.com
                         </p>
                     </div>
                 </div>

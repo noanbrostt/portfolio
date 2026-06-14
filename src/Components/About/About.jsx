@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
-// import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { ThemeContext } from "../../Context/theme";
 import profilePic from "../../assets/foto_perfil.png";
 import { Trans } from "react-i18next";

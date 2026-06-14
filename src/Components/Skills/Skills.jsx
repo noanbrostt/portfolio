@@ -14,6 +14,39 @@ import { SiTailwindcss, SiTypescript, SiMicrosoftsqlserver, SiGo } from "react-i
 import { MdDesignServices, MdPhoneIphone } from "react-icons/md";
 import { Trans } from "react-i18next";
 
+const skillGroups = [
+    {
+        title: "Front-End",
+        skills: [
+            { icon: MdDesignServices, name: "User Experience (UX)", bar: "ux", level: "95%" },
+            { icon: DiJavascript, name: "HTML / CSS / JS", bar: "html", level: "90%" },
+            { icon: FaReact, name: "React", bar: "react", level: "85%" },
+            { icon: SiTailwindcss, name: "Tailwind", bar: "tailwind", level: "85%" },
+            { icon: MdPhoneIphone, name: "React Native", bar: "reactnative", level: "70%" },
+            { icon: SiTypescript, name: "TypeScript", bar: "typescript", level: "65%" },
+        ],
+    },
+    {
+        titleKey: "skills.backend",
+        skills: [
+            { icon: SiMicrosoftsqlserver, name: "SQL Server", bar: "sql", level: "90%" },
+            { icon: FaPhp, name: "PHP / Laravel", bar: "phplaravel", level: "85%" },
+            { icon: DiPostgresql, name: "PostgreSQL", bar: "postgresql", level: "80%" },
+            { icon: FaNodeJs, name: "NodeJS", bar: "nodejs", level: "25%" },
+            { icon: SiGo, name: "Golang", bar: "golang", level: "20%" },
+        ],
+    },
+    {
+        titleKey: "skills.others",
+        skills: [
+            { icon: FaGithub, name: "Git / GitHub", bar: "git", level: "75%" },
+            { icon: FaFlagUsa, nameKey: "skills.english", bar: "ingles", level: "B2" },
+            { icon: FaRobot, name: "Agente de IA", bar: "agenteia", level: "60%" },
+            { icon: FaDocker, name: "Docker", bar: "docker", level: "30%" },
+        ],
+    },
+];
+
 export const Skills = () => {
     return (
         <>
@@ -23,217 +56,33 @@ export const Skills = () => {
                 </h2>
                 <div className="techsection">
                     {/* From Uiverse.io by Juanes200122, adapted by me */}
-                    <div className="skillBox" data-aos="fade-right">
-                        <h4>Front-End</h4>
-                        
-                        <div className="skill">
-                            <MdDesignServices />
-                            <div>
-                                <span className="title">User Experience (UX)</span>
+                    {skillGroups.map((group) => (
+                        <div className="skillBox" data-aos="fade-right" key={group.title || group.titleKey}>
+                            <h4>
+                                {group.titleKey ? <Trans i18nKey={group.titleKey} /> : group.title}
+                            </h4>
 
-                                <div className="skillBar">
-                                    <span className="skillPer ux" data-aos="width-animation">
-                                        <span className="tooltip">95%</span>
-                                    </span>
-                                </div>
-                            </div>
+                            {group.skills.map((skill) => {
+                                const Icon = skill.icon;
+                                return (
+                                    <div className="skill" key={skill.bar}>
+                                        <Icon />
+                                        <div>
+                                            <span className="title">
+                                                {skill.nameKey ? <Trans i18nKey={skill.nameKey} /> : skill.name}
+                                            </span>
+
+                                            <div className="skillBar">
+                                                <span className={`skillPer ${skill.bar}`} data-aos="width-animation">
+                                                    <span className="tooltip">{skill.level}</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
-
-                        <div className="skill">
-                            <DiJavascript />
-                            <div>
-                                <span className="title">HTML / CSS / JS</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer html" data-aos="width-animation">
-                                        <span className="tooltip">90%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaReact />
-                            <div>
-                                <span className="title">React</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer react" data-aos="width-animation">
-                                        <span className="tooltip">85%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <SiTailwindcss />
-                            <div>
-                                <span className="title">Tailwind</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer tailwind" data-aos="width-animation">
-                                        <span className="tooltip">85%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <MdPhoneIphone />
-                            <div>
-                                <span className="title">React Native</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer reactnative" data-aos="width-animation">
-                                        <span className="tooltip">70%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <SiTypescript />
-                            <div>
-                                <span className="title">TypeScript</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer typescript" data-aos="width-animation">
-                                        <span className="tooltip">65%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="skillBox" data-aos="fade-right">
-                        <h4>
-                            <Trans i18nKey="skills.backend" />
-                        </h4>
-
-                        <div className="skill">
-                            <SiMicrosoftsqlserver />
-                            <div>
-                                <span className="title">SQL Server</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer sql" data-aos="width-animation">
-                                        <span className="tooltip">90%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaPhp />
-                            <div>
-                                <span className="title">PHP / Laravel</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer phplaravel" data-aos="width-animation">
-                                        <span className="tooltip">85%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <DiPostgresql />
-                            <div>
-                                <span className="title">PostgreSQL</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer postgresql" data-aos="width-animation">
-                                        <span className="tooltip">80%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaNodeJs />
-                            <div>
-                                <span className="title">NodeJS</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer nodejs" data-aos="width-animation">
-                                        <span className="tooltip">25%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <SiGo />
-                            <div>
-                                <span className="title">Golang</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer golang" data-aos="width-animation">
-                                        <span className="tooltip">20%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="skillBox" data-aos="fade-right">
-                        <h4>
-                            <Trans i18nKey="skills.others" />
-                        </h4>
-                        <div className="skill">
-                            <FaGithub />
-                            <div>
-                                <span className="title">Git / GitHub</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer git" data-aos="width-animation">
-                                        <span className="tooltip">75%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaFlagUsa />
-                            <div>
-                                <span className="title">
-                                    <Trans i18nKey="skills.english" />
-                                </span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer ingles" data-aos="width-animation">
-                                        <span className="tooltip">B2</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaRobot />
-                            <div>
-                                <span className="title">Agente de IA</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer agenteia" data-aos="width-animation">
-                                        <span className="tooltip">60%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="skill">
-                            <FaDocker />
-                            <div>
-                                <span className="title">Docker</span>
-
-                                <div className="skillBar">
-                                    <span className="skillPer docker" data-aos="width-animation">
-                                        <span className="tooltip">30%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </>

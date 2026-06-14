@@ -7,6 +7,41 @@ import pizra from "../../assets/projects/Pizra.png";
 import plansul from "../../assets/projects/recrutamento-plansul.png";
 import tinder from "../../assets/projects/tinder.png";
 
+const projects = [
+    {
+        name: "Plansul Admin",
+        titleKey: "projects.admin.title",
+        descriptionKey: "projects.admin.description",
+        deployUrl: "https://noanbrostt.github.io/Plansul-Admin/",
+        codeUrl: "https://github.com/noanbrostt/Plansul-Admin/",
+        image: admin,
+    },
+    {
+        name: "Pizra",
+        titleKey: "projects.pizra.title",
+        descriptionKey: "projects.pizra.description",
+        deployUrl: "https://noanbrostt.github.io/Pizra/",
+        codeUrl: "https://github.com/noanbrostt/Pizra/",
+        image: pizra,
+    },
+    {
+        name: "Recrutamento Plansul",
+        titleKey: "projects.plansul.title",
+        descriptionKey: "projects.plansul.description",
+        deployUrl: "https://noanbrostt.github.io/recruiting-landing-page/",
+        codeUrl: "https://github.com/noanbrostt/recruiting-landing-page/",
+        image: plansul,
+    },
+    {
+        name: "Tinder",
+        titleKey: "projects.tinder.title",
+        descriptionKey: "projects.tinder.description",
+        deployUrl: "https://noanbrostt.github.io/tinder/",
+        codeUrl: "https://github.com/noanbrostt/tinder/",
+        image: tinder,
+    },
+];
+
 export const Projects = () => {
 
     return (
@@ -16,39 +51,17 @@ export const Projects = () => {
                     <Trans i18nKey="projects.title" />
                 </h2>
                 <div className="allProjects">
-
-                    <ProjectCard
-                        title={<Trans i18nKey="projects.admin.title" />}
-                        description={<Trans i18nKey="projects.admin.description" />}
-                        deployUrl="https://noanbrostt.github.io/Plansul-Admin/"
-                        codeUrl="https://github.com/noanbrostt/Plansul-Admin/"
-                        imageUrl={admin}
-                    />
-
-                    <ProjectCard
-                        title={<Trans i18nKey="projects.pizra.title" />}
-                        description={<Trans i18nKey="projects.pizra.description" />}
-                        deployUrl="https://noanbrostt.github.io/Pizra/"
-                        codeUrl="https://github.com/noanbrostt/Pizra/"
-                        imageUrl={pizra}
-                    />
-
-                    <ProjectCard
-                        title={<Trans i18nKey="projects.plansul.title" />}
-                        description={<Trans i18nKey="projects.plansul.description" />}
-                        deployUrl="https://noanbrostt.github.io/recruiting-landing-page/"
-                        codeUrl="https://github.com/noanbrostt/recruiting-landing-page/"
-                        imageUrl={plansul}
-                    />
-
-                    <ProjectCard
-                        title={<Trans i18nKey="projects.tinder.title" />}
-                        description={<Trans i18nKey="projects.tinder.description" />}
-                        deployUrl="https://noanbrostt.github.io/tinder/"
-                        codeUrl="https://github.com/noanbrostt/tinder/"
-                        imageUrl={tinder}
-                    />
-
+                    {projects.map((project) => (
+                        <ProjectCard
+                            key={project.name}
+                            titleKey={project.titleKey}
+                            descriptionKey={project.descriptionKey}
+                            deployUrl={project.deployUrl}
+                            codeUrl={project.codeUrl}
+                            imageUrl={project.image}
+                            alt={project.name}
+                        />
+                    ))}
                 </div>
             </div>
         </>

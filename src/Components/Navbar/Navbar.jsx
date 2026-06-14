@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { ThemeContext } from "../../Context/theme";
 import "./Navbar.css";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
+import { MdMenu, MdClose } from "react-icons/md";
 import { Trans } from "react-i18next";
 
 import LanguageToggle from './LanguageToggle';
@@ -100,7 +99,7 @@ export const Navbar = () => {
           className="btn btn--icon nav__hamburger"
           aria-label="toggle navigation"
         >
-          {showNavList ? <CloseIcon /> : <MenuIcon />}
+          {showNavList ? <MdClose /> : <MdMenu />}
         </button>
       </nav>
     </>

@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 import { Type } from "./Type";
 import bkgPic from "../../assets/home_bkg.jpg";
 import { Trans } from "react-i18next";
 
-import GitHubIcon from "@material-ui/icons/GitHub";
-import EmailIcon from "@material-ui/icons/Email";
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
+import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { MdEmail, MdDescription } from "react-icons/md";
 
 
 export const Home = () => {
@@ -38,7 +35,7 @@ export const Home = () => {
                         rel="noreferrer"
                         className="link link--icon"
                     >
-                        <GitHubIcon />
+                        <FaGithub />
                     </a>
                     <a
                         href="mailto:calielnoan@gmail.com"
@@ -47,7 +44,7 @@ export const Home = () => {
                         aria-label="mail"
                         className="link link--icon"
                     >
-                        <EmailIcon />
+                        <MdEmail />
                     </a>
                     <a
                         href="https://wa.me//5541999946316"
@@ -56,7 +53,7 @@ export const Home = () => {
                         aria-label="phone"
                         className="link link--icon"
                     >
-                        <WhatsAppIcon />
+                        <FaWhatsapp />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/noan-caliel-brostt-74ab66187/"
@@ -65,7 +62,7 @@ export const Home = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <LinkedInIcon />
+                        <FaLinkedin />
                     </a>
                     <a
                         href="https://drive.google.com/file/d/1ePHlE76P4dVXpHfxugwWst-bvuYlg2mg/view?usp=drive_link"
@@ -74,7 +71,7 @@ export const Home = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <DescriptionIcon />
+                        <MdDescription />
                     </a>
                 </div>
 

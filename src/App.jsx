@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { ThemeContext } from "./Context/theme";
 import Aos from "aos";

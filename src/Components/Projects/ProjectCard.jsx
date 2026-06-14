@@ -2,24 +2,26 @@ import React from "react";
 import "./ProjectCard.css";
 import { Trans } from "react-i18next";
 
-const ProjectCard = ({ title, description, deployUrl, codeUrl, imageUrl }) => {
+const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, alt }) => {
     return (
         <div className="project" data-aos="fade-right">
-            <div
+            <a
                 className="imgContainer"
-                onClick={() => window.open(deployUrl, "_blank")}
+                href={deployUrl}
+                target="_blank"
+                rel="noreferrer"
             >
-                <img src={imageUrl} alt={title} />
-            </div>
+                <img src={imageUrl} alt={alt} />
+            </a>
 
             <div className="verticalLine"></div>
 
             <div className="projectDetails">
-                <h3>{title}</h3>
-                <p>{description}</p>
+                <h3><Trans i18nKey={titleKey} /></h3>
+                <p><Trans i18nKey={descriptionKey} /></p>
 
                 <div className="actions">
-                    <a className="fancy" href={deployUrl} target="_blank">
+                    <a className="fancy" href={deployUrl} target="_blank" rel="noreferrer">
                         <span className="top-key"></span>
                         <span className="text">
                             <Trans i18nKey="projects.button.site" />
@@ -27,7 +29,7 @@ const ProjectCard = ({ title, description, deployUrl, codeUrl, imageUrl }) => {
                         <span className="bottom-key-1"></span>
                         <span className="bottom-key-2"></span>
                     </a>
-                    <a className="fancy" href={codeUrl} target="_blank">
+                    <a className="fancy" href={codeUrl} target="_blank" rel="noreferrer">
                         <span className="top-key"></span>
                         <span className="text">
                             <Trans i18nKey="projects.button.code" />
