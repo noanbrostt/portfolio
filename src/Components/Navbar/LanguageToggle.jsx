@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./LanguageToggle.css"; // CSS para estilização e animação
 
-import br_flag from "../../assets/brazil.png";
-import us_flag from "../../assets/united-states.png";
+import br_flag from "../../assets/brazil.webp";
+import us_flag from "../../assets/united-states.webp";
 
 const LanguageToggle = () => {
     const {

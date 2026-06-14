@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import { Trans } from "react-i18next";
 
-const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, alt }) => {
+const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, alt, tech = [] }) => {
     return (
         <div className="project" data-aos="fade-right">
             <a
@@ -19,6 +19,24 @@ const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, a
             <div className="projectDetails">
                 <h3><Trans i18nKey={titleKey} /></h3>
                 <p><Trans i18nKey={descriptionKey} /></p>
+
+                <div className="techStack">
+                    {tech.map((item, index) => {
+                        const Icon = item.icon;
+                        return (
+                            <span
+                                className="techBadge"
+                                key={item.label}
+                                style={{ "--brand": item.color }}
+                                data-aos="fade-down"
+                                data-aos-delay={index * 80}
+                            >
+                                <Icon />
+                                {item.label}
+                            </span>
+                        );
+                    })}
+                </div>
 
                 <div className="actions">
                     <a className="fancy" href={deployUrl} target="_blank" rel="noreferrer">

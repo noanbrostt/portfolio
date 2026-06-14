@@ -35,6 +35,34 @@
     flex-direction: column;
     justify-content: center;
 }
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+.techBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--clr-fg-alt);
+    background-color: rgba(var(--clr-fg-alt-rgb), 0.07);
+    border: 1px solid rgba(var(--clr-fg-alt-rgb), 0.14);
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.techBadge svg {
+    color: var(--brand);
+    font-size: 15px;
+    background-color: transparent;
+}
+.techBadge:hover {
+    border-color: var(--brand);
+    transform: translateY(-2px);
+}
 .actions {
     display: flex;
     gap: 20px;
@@ -153,6 +181,9 @@
     .projectDetails {
         width: 100%;
         text-align: center;
+    }
+    .techStack {
+        justify-content: center;
     }
     .actions {
         justify-content: center;

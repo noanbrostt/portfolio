@@ -42,6 +42,10 @@
 }
 .card {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
 }
 .card p {
     font-size: 14px;

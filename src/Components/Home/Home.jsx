@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Type } from "./Type";
-import bkgPic from "../../assets/home_bkg.jpg";
+import bkgPic from "../../assets/home_bkg.webp";
 import { Trans } from "react-i18next";
 
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";

@@ -7,33 +7,39 @@
         "nav.contact": "Contato",
         "nav.resume": "Currículo",
 
-        "home.greeting": "Olá! Eu sou <1>{{name}}</1>, Dev Full Stack e artista do Front-End.",
+        "home.greeting": "Olá! Eu sou <1>{{name}}</1>, Desenvolvedor Full Stack Sênior e artista do Front-End.",
 
-        "type.full": "Desenvolvedor Full Stack Pleno",
-        "type.front": "Especialista em React & UX/UI",
+        "type.full": "Desenvolvedor Full Stack Sênior",
+        "type.front": "Especialista em React & UX",
         "type.atleta": "Atleta Amador de Vôlei",
 
         "about.title": "SOBRE <1>MIM</1>",
-        "about.text": "Olá, seja bem vindo! <wave>🖐🏻</wave><br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>Análise e Desenvolvimento de Sistemas</dif> e <dif>pós-graduado em Front-End</dif>.<br/><br/>Atualmente atuo como <dif>Analista de Sistemas Pleno</dif>, com foco total na evolução para o <dif>ecossistema React</dif>, onde sou responsável por criar interfaces de alta interatividade e lógica complexa de front-end.<br/><br/>Com uma trajetória sólida no desenvolvimento de aplicações para grandes operações como a <dif>{{company}}</dif>, me destaco pela facilidade em unir o domínio do stack (PHP/Laravel/SQL) com uma entrega de <dif>UX fluida</dif> e <dif>interfaces limpas e funcionais</dif>.",
+        "about.text": "Olá, seja bem vindo! <wave>🖐🏻</wave><br/><br/>Meu nome é <dif>{{name}}</dif>, moro em <dif>{{city}}</dif>, sou formado em <dif>Análise e Desenvolvimento de Sistemas</dif> e <dif>pós-graduado em Front-End</dif>.<br/><br/>Atuo como <dif>Desenvolvedor Full Stack Sênior</dif>, mas é no <dif>front-end</dif> que eu brilho, e mais especificamente na <dif>experiência do usuário</dif>. Minha especialidade é construir <dif>ferramentas intuitivas e prestativas</dif>, que resolvem o problema sem fazer a pessoa pensar. Domino o stack inteiro, o que me deixa enxergar o sistema de ponta a ponta, mas é transformando requisitos em <dif>interfaces fluidas e fáceis de usar</dif> que entrego meu melhor.<br/><br/>Já construí aplicações para grandes operações como a <dif>{{company}}</dif>. E fora do código, sou <dif>atleta amador de vôlei</dif>, levando o mesmo foco e jogo de equipe da quadra para o time de desenvolvimento.",
 
         "skills.title": "HABILIDADES",
         "skills.backend": "Back-End / Banco",
         "skills.others": "Outros",
         "skills.english": "Inglês",
+        "skills.level.advanced": "Avançado",
+        "skills.level.intermediate": "Intermediário",
+        "skills.level.learning": "Aprendendo",
+        "skills.drag": "Arraste para girar",
+        "skills.view.cloud": "3D",
+        "skills.view.cards": "Lista",
 
         "projects.title": "Projetos",
         "projects.button.site": "ACESSAR SITE",
         "projects.button.code": "VER CÓDIGO",
         "projects.pizra.title": "Pizra Pizzaria",
-        "projects.pizra.description": "Site completo e responsivo para uma pizzaria ficcional.",
+        "projects.pizra.description": "Site fictício de pizzaria onde tive minhas primeiras experiências sólidas com responsividade, animações de blob, integração com o Google Maps e encaminhamento de pedidos para o WhatsApp.",
         "projects.admin.title": "Admin Dashboard",
-        "projects.admin.description": "Aplicativo robusto para sustentar diversos sistemas de uma empresa real.",
+        "projects.admin.description": "Dashboard administrativo que criei do zero como principal front-end, definindo a identidade visual e dezenas de telas. O que está aqui é apenas uma demo, a versão completa está em uso pelo cliente.",
         "projects.plansul.title": "Página de Recrutamento",
-        "projects.plansul.description": "Site real e responsivo criado pra capturar novos funcionários para a Plansul.",
+        "projects.plansul.description": "Página de recrutamento real que criei para a Plansul, onde consolidei o que aprendi no projeto da pizzaria. Entrou no ar e foi usada pela empresa para recrutar operadores de telemarketing.",
         "projects.tinder.title": "Tinder Interativo",
-        "projects.tinder.description": "Foi feito com a biblioteca Hammer.JS que permite arrastar e pinçar a foto. Inclusive o celular é uma arte minha feita apenas com CSS.",
+        "projects.tinder.description": "Clone do Tinder e um dos meus primeiros projetos. Dá para deslizar as fotos para reagir como no original. O celular é uma arte que montei div por div em HTML e CSS (Desde os botões até o reflexo da câmera). Fiz enquanto júnior e me orgulho muito.",
 
         "contact.title": "FALE <dif>COMIGO</dif>",
-        "contact.position": "Analista de Sistemas Pleno | Especialista Front-End"
+        "contact.position": "Desenvolvedor Full Stack Sênior | Especialista em Front-End"
     }
 }

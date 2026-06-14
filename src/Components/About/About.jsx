@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { ThemeContext } from "../../Context/theme";
-import profilePic from "../../assets/foto_perfil.png";
+import profilePic from "../../assets/foto_perfil.webp";
 import { Trans } from "react-i18next";
 
 export const About = () => {

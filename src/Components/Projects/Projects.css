@@ -10,6 +10,10 @@
     .projectDetails {
         text-align: end;
 
+        .techStack {
+            justify-content: flex-end;
+        }
+
         .actions {
             justify-content: flex-end;
         }
