@@ -36,7 +36,11 @@
     
         .projectDetails {
             text-align: center;
-    
+
+            .techStack {
+                justify-content: center;
+            }
+
             .actions {
                 justify-content: center;
             }

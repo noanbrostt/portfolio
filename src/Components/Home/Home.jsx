@@ -24,9 +24,9 @@ export const Home = () => {
                         components={{ 1: <span className="about__name" /> }}
                     />
                 </h1>
-                <p data-aos="fade-right">
+                <div className="about__type" data-aos="fade-right">
                     <Type />
-                </p>
+                </div>
                 <div className="about__contact center">
                     <a
                         href="https://github.com/noanbrostt"

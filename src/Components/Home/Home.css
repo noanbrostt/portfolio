@@ -21,7 +21,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .about h1,
-.about p,
+.about .about__type,
 .about .about__contact,
 .link--icon {
     color: #cdcdff !important;

@@ -202,6 +202,22 @@
 .skill3dItem:hover .skill3dIcon {
     transform: scale(1.18);
 }
+.skill3dIcon.pinged {
+    animation: skillPing 0.6s ease-out;
+}
+@keyframes skillPing {
+    0% {
+        transform: scale(1);
+    }
+    35% {
+        transform: scale(1.4);
+        filter: drop-shadow(0 0 12px var(--brand));
+    }
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.4));
+    }
+}
 .skills3dHint {
     text-align: center;
     font-size: 12px;

@@ -86,7 +86,7 @@ export const Projects = () => {
                             codeUrl={project.codeUrl}
                             imageUrl={project.image}
                             alt={project.name}
-                            tech={project.tech.map((id) => TECH[id])}
+                            tech={project.tech.map((id) => ({ id, ...TECH[id] }))}
                         />
                     ))}
                 </div>

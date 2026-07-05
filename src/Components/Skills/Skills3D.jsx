@@ -40,7 +40,7 @@ const IconNode = ({ skill, position, depth }) => {
     return (
         <group ref={groupRef} position={position}>
             <Html center zIndexRange={[100, 0]}>
-                <div ref={elRef} className="skill3dItem" style={{ "--brand": skill.color }}>
+                <div ref={elRef} className="skill3dItem" style={{ "--brand": skill.color }} data-tech={skill.techId}>
                     <Icon className="skill3dIcon" />
                     <span className="skill3dName">
                         {skill.nameKey ? <Trans i18nKey={skill.nameKey} /> : skill.name}

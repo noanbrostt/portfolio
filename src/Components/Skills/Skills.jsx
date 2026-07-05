@@ -22,28 +22,28 @@ const skillGroups = [
     {
         title: "Front-End",
         skills: [
-            { icon: MdDesignServices, name: "UX / UI", color: ACCENT, levelKey: "skills.level.advanced" },
-            { icon: DiJavascript, name: "HTML / CSS / JS", color: "#e6b800", levelKey: "skills.level.advanced" },
-            { icon: FaReact, name: "React", color: "#36b3e3", levelKey: "skills.level.advanced" },
-            { icon: SiTailwindcss, name: "Tailwind", color: "#2bb6cf", levelKey: "skills.level.advanced" },
+            { icon: MdDesignServices, name: "UX / UI", color: ACCENT, levelKey: "skills.level.advanced", techId: "uxui" },
+            { icon: DiJavascript, name: "HTML / CSS / JS", color: "#e6b800", levelKey: "skills.level.advanced", techId: "js" },
+            { icon: FaReact, name: "React", color: "#36b3e3", levelKey: "skills.level.advanced", techId: "react" },
+            { icon: SiTailwindcss, name: "Tailwind", color: "#2bb6cf", levelKey: "skills.level.advanced", techId: "tailwind" },
             { icon: MdPhoneIphone, name: "React Native", color: "#36b3e3", levelKey: "skills.level.intermediate" },
-            { icon: SiTypescript, name: "TypeScript", color: "#3a8fd6", levelKey: "skills.level.intermediate" },
+            { icon: SiTypescript, name: "TypeScript", color: "#3a8fd6", levelKey: "skills.level.intermediate", techId: "ts" },
         ],
     },
     {
         titleKey: "skills.backend",
         skills: [
-            { icon: SiMicrosoftsqlserver, name: "SQL Server", color: "#e03b38", levelKey: "skills.level.advanced" },
-            { icon: FaPhp, name: "PHP / Laravel", color: "#7e84db", levelKey: "skills.level.advanced" },
-            { icon: DiPostgresql, name: "PostgreSQL", color: "#4a97cf", levelKey: "skills.level.advanced" },
-            { icon: FaNodeJs, name: "NodeJS", color: "#4caf50", levelKey: "skills.level.learning" },
+            { icon: SiMicrosoftsqlserver, name: "SQL Server", color: "#e03b38", levelKey: "skills.level.advanced", techId: "sqlserver" },
+            { icon: FaPhp, name: "PHP / Laravel", color: "#7e84db", levelKey: "skills.level.advanced", techId: "php" },
+            { icon: DiPostgresql, name: "PostgreSQL", color: "#4a97cf", levelKey: "skills.level.advanced", techId: "postgres" },
+            { icon: FaNodeJs, name: "NodeJS", color: "#4caf50", levelKey: "skills.level.learning", techId: "node" },
             { icon: SiGo, name: "Golang", color: "#2bbbe0", levelKey: "skills.level.learning" },
         ],
     },
     {
         titleKey: "skills.others",
         skills: [
-            { icon: FaGithub, name: "Git / GitHub", color: "#ef6b43", levelKey: "skills.level.intermediate" },
+            { icon: FaGithub, name: "Git / GitHub", color: "#ef6b43", levelKey: "skills.level.intermediate", techId: "git" },
             { icon: FaFlagUsa, nameKey: "skills.english", color: ACCENT, level: "B2" },
             { icon: FaRobot, name: "Agente de IA", color: ACCENT, levelKey: "skills.level.intermediate" },
             { icon: FaDocker, name: "Docker", color: "#3a9eef", levelKey: "skills.level.learning" },

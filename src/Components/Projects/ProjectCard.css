@@ -42,26 +42,171 @@
     margin-top: 16px;
 }
 .techBadge {
+    position: relative;
     display: inline-flex;
-    align-items: center;
-    gap: 6px;
     padding: 4px 10px;
     border-radius: 999px;
     font-size: 12px;
     font-weight: 600;
     color: var(--clr-fg-alt);
-    background-color: rgba(var(--clr-fg-alt-rgb), 0.07);
-    border: 1px solid rgba(var(--clr-fg-alt-rgb), 0.14);
-    transition: border-color 0.25s ease, transform 0.25s ease;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: none;
+    transform: translate(var(--mx, 0px), var(--my, 0px));
+    transition: box-shadow 0.25s ease, transform 0.18s ease-out;
 }
-.techBadge svg {
+.techBadgeInner {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+}
+.techBadgeInner svg {
     color: var(--brand);
     font-size: 15px;
     background-color: transparent;
 }
 .techBadge:hover {
-    border-color: var(--brand);
-    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px var(--brand);
+}
+
+.techBadge.arrived {
+    background-color: rgba(var(--clr-fg-alt-rgb), 0.07);
+    border-color: rgba(var(--clr-fg-alt-rgb), 0.14);
+    animation: techPillIn 0.4s ease-out;
+}
+.techBadge.arrived .techBadgeInner {
+    opacity: 1;
+    animation: techBadgePop 0.42s ease-out;
+}
+.techBadge.arrived.bump .techBadgeInner {
+    animation: techBadgeBump 0.3s ease-out;
+}
+@keyframes techBadgeBump {
+    50% {
+        transform: scale(1.15);
+    }
+}
+.techBadge::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    border: 1px solid var(--brand);
+    opacity: 0;
+    pointer-events: none;
+}
+.techBadge.arrived::after {
+    animation: techLandRing 0.55s ease-out forwards;
+}
+@keyframes techLandRing {
+    0% {
+        opacity: 0.9;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.7);
+    }
+}
+
+@keyframes techPillIn {
+    from {
+        background-color: rgba(var(--clr-fg-alt-rgb), 0);
+        border-color: rgba(var(--clr-fg-alt-rgb), 0);
+    }
+    to {
+        background-color: rgba(var(--clr-fg-alt-rgb), 0.07);
+        border-color: rgba(var(--clr-fg-alt-rgb), 0.14);
+    }
+}
+@keyframes techBadgePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.techFlightOverlay,
+.techFlightOverlay * {
+    background-color: transparent;
+}
+.techFlightOverlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.techFlier {
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform, opacity;
+}
+.techFlierIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+    color: var(--brand);
+    line-height: 0;
+}
+.techFlierIcon svg {
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+.techFlierStar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    margin: -4.5px 0 0 -4.5px;
+    border-radius: 50%;
+    background: var(--brand);
+    box-shadow: 0 0 12px 3px var(--brand), 0 0 4px 1px #fff;
+    opacity: 0;
+}
+.techFlierStar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 3px;
+    height: 46px;
+    background: linear-gradient(to top, transparent, var(--brand));
+    transform-origin: top center;
+    transform: translate(-50%, 0) rotate(var(--tail-angle, 0deg));
+    border-radius: 3px;
+    opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .techBadge {
+        background-color: rgba(var(--clr-fg-alt-rgb), 0.07);
+        border-color: rgba(var(--clr-fg-alt-rgb), 0.14);
+        transform: none !important;
+    }
+    .techBadgeInner {
+        opacity: 1;
+    }
+    .techBadge.arrived,
+    .techBadge.arrived::after,
+    .techBadge.arrived .techBadgeInner,
+    .techBadge.arrived.bump .techBadgeInner {
+        animation: none;
+    }
 }
 .actions {
     display: flex;
