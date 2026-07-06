@@ -18,7 +18,7 @@ export default function App() {
     const { i18n } = useTranslation();
 
     React.useEffect(() => {
-        Aos.init({ duration: 1400 });
+        Aos.init({ duration: 700 });
 
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get('lang');

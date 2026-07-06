@@ -1,18 +1,22 @@
 # 🎨 Noan Caliel Brostt - Portfolio
 
-Bem-vindo ao repositório! Este projeto mostra minhas qualificações como desenvolvedor Full Stack PHP, com foco em Front-End. 💻✨
+Bem-vindo ao repositório! Este projeto mostra minhas qualificações como Desenvolvedor Full Stack Sênior, especialista em Front-End e UX. 💻✨
 
 ## 🚀 Sobre o Projeto
 
-Este é o meu portfólio pessoal, desenvolvido em **React.js**, projetado para ser único, visualmente atraente e funcional. Aqui você encontrará informações sobre mim, meus projetos e minha trajetória como desenvolvedor.
+Este é o meu portfólio pessoal, desenvolvido em **React 18 + Vite**, projetado para ser único, visualmente atraente e funcional. Aqui você encontrará informações sobre mim, meus projetos e minha trajetória como desenvolvedor.
 
 ### 🔹 Tecnologias Utilizadas:
 
-* React.js
-* Styled Components
+* React 18 + Vite
+* Three.js (via react-three-fiber) na nuvem 3D de habilidades
+* i18next (site bilíngue pt/en)
 * AOS (Animate on Scroll)
-* Typewriter.js
+* Typewriter Effect
+* CSS puro com variáveis por tema (dark/light)
 * GitHub Pages para deploy
+
+> 📚 Detalhes técnicos de como cada efeito foi implementado estão em [`docs/TECNOLOGIAS.md`](docs/TECNOLOGIAS.md).
 
 ## 📸 Preview
 
@@ -46,17 +50,22 @@ Para rodar o projeto localmente, siga os passos abaixo:
     npm start
     ```
 
-    O projeto será aberto em `http://localhost:3000/`.
+    O projeto será aberto em `http://localhost:3000/portfolio/`.
 
 ## 🚀 Como Fazer o Deploy
 
-Este projeto está configurado para ser publicado no GitHub Pages. Para fazer o deploy, basta rodar:
+O site fica no ar pelo GitHub Pages, servido a partir da branch `gh-pages`. Depois de commitar (e dar push) das mudanças na `main`, basta rodar:
 
 ```bash
 npm run deploy
 ```
 
-Isso criará um build e publicará automaticamente na branch `gh-pages`, tornando o site acessível pelo link configurado no `package.json`.
+Esse único comando faz tudo:
+
+1. `predeploy` roda o `vite build` e gera a versão de produção na pasta `dist/`;
+2. o pacote `gh-pages` publica o conteúdo de `dist/` na branch `gh-pages` e faz o push automaticamente.
+
+Não é preciso fazer checkout nem mexer manualmente na branch `gh-pages`: ela é sobrescrita pela ferramenta a cada deploy. O site atualiza em `https://noanbrostt.github.io/portfolio/` alguns instantes depois (a URL vem do campo `homepage` do `package.json`).
 
 ## 📜 Licença
 

@@ -6,8 +6,8 @@ import { flyTech, flyTechBack } from "./techFlight";
 const magnetMove = (event) => {
     const el = event.currentTarget;
     const rect = el.getBoundingClientRect();
-    el.style.setProperty("--mx", `${((event.clientX - rect.left) / rect.width - 0.5) * 10}px`);
-    el.style.setProperty("--my", `${((event.clientY - rect.top) / rect.height - 0.5) * 8}px`);
+    el.style.setProperty("--mx", `${((event.clientX - rect.left) / rect.width - 0.5) * 16}px`);
+    el.style.setProperty("--my", `${((event.clientY - rect.top) / rect.height - 0.5) * 12}px`);
 };
 
 const magnetReset = (event) => {
@@ -25,7 +25,7 @@ const sendBack = (event, item) => {
     }
 };
 
-const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, alt, tech = [] }) => {
+const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, alt, tech = [], flip = false, featured = false, stats = [] }) => {
     const stackRef = useRef(null);
     const badgeRefs = useRef([]);
     const delays = useMemo(
@@ -59,21 +59,50 @@ const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, a
     }, []);
 
     return (
-        <div className="project" data-aos="fade-right">
-            <a
-                className="imgContainer"
-                href={deployUrl}
-                target="_blank"
-                rel="noreferrer"
-            >
-                <img src={imageUrl} alt={alt} />
-            </a>
+        <div
+            className={`project${flip ? " flip" : ""}${featured ? " featured" : ""}`}
+            data-aos="fade-right"
+        >
+            {deployUrl ? (
+                <a
+                    className="imgContainer"
+                    href={deployUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <img src={imageUrl} alt={alt} />
+                </a>
+            ) : (
+                <div className="imgContainer">
+                    <img src={imageUrl} alt={alt} />
+                </div>
+            )}
 
             <div className="verticalLine"></div>
 
             <div className="projectDetails">
+                {featured && (
+                    <span className="featuredTag">
+                        <Trans i18nKey="projects.featured.tag" />
+                    </span>
+                )}
                 <h3><Trans i18nKey={titleKey} /></h3>
                 <p><Trans i18nKey={descriptionKey} /></p>
+
+                {stats.length > 0 && (
+                    <div className="featuredStats">
+                        {stats.map((stat) => (
+                            <div className="featStat" key={stat.labelKey}>
+                                <span className="featStatValue">
+                                    <Trans i18nKey={stat.valueKey} />
+                                </span>
+                                <span className="featStatLabel">
+                                    <Trans i18nKey={stat.labelKey} />
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                )}
 
                 <div className="techStack" ref={stackRef}>
                     {tech.map((item, index) => {
@@ -98,14 +127,16 @@ const ProjectCard = ({ titleKey, descriptionKey, deployUrl, codeUrl, imageUrl, a
                 </div>
 
                 <div className="actions">
-                    <a className="fancy" href={deployUrl} target="_blank" rel="noreferrer">
-                        <span className="top-key"></span>
-                        <span className="text">
-                            <Trans i18nKey="projects.button.site" />
-                        </span>
-                        <span className="bottom-key-1"></span>
-                        <span className="bottom-key-2"></span>
-                    </a>
+                    {deployUrl && (
+                        <a className="fancy" href={deployUrl} target="_blank" rel="noreferrer">
+                            <span className="top-key"></span>
+                            <span className="text">
+                                <Trans i18nKey="projects.button.site" />
+                            </span>
+                            <span className="bottom-key-1"></span>
+                            <span className="bottom-key-2"></span>
+                        </a>
+                    )}
                     <a className="fancy" href={codeUrl} target="_blank" rel="noreferrer">
                         <span className="top-key"></span>
                         <span className="text">
