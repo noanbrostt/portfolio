@@ -11,7 +11,6 @@ const ThemeProvider = ({ children }) => {
     };
 
     React.useEffect(() => {
-        // Função para fazer o scroll bar acompanhar a cor do tema
         const clrBg = getComputedStyle(document.querySelector("."+themename)).getPropertyValue('--clr-bg-alt').trim();
         const clrBgAlt = getComputedStyle(document.querySelector("."+themename)).getPropertyValue('--clr-bg').trim();
     
